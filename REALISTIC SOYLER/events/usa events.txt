@@ -1,0 +1,45 @@
+country_event = {
+	id = 500216
+	title = "Nixon impeached!"
+	desc = "event500216desc"
+	fire_only_once = yes
+
+	trigger = {
+		month = 4
+		tag = USA
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		ruling_party_ideology = liberal
+	}
+	option = {
+		name = "America will surely rise out of this shameful event."
+		prestige = -10
+	}
+}
+
+country_event = {
+	id = 500217
+	title = "Tragedy in Dallas!"
+	desc = "event500217desc"
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		month = 8
+		tag = USA
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		ruling_party_ideology = conservative
+	}
+	option = {
+		name = "John W. McCormack will warm the seat of the presidency until the next election."
+		
+	}
+}

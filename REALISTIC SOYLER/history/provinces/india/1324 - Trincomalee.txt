@@ -1,0 +1,8 @@
+owner = CBR
+controller = CBR
+
+add_core = GWA
+
+
+trade_goods = tea
+life_rating = 32

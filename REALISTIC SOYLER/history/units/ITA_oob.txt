@@ -1,0 +1,501 @@
+#Starting Relations
+GRE = {
+	value = -20
+	level = 5
+}
+
+ARG = { #"All duces will have close relationships with Argentina (which btw starts as a “Triumvirate Observer”), since Italians make 25% of the population and hold great influence." lmao
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 75
+}
+
+CHL = {
+	value = 125
+	level = 3
+	influence_value = 75
+}
+
+IAL = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 75
+}
+
+IET = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 75
+}
+
+IGY = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 75
+}
+
+IIS = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 75
+}
+
+IRQ = {
+	value = 100
+	level = 5
+	influence_value = 0
+}
+
+
+
+#OMA = {
+#	value = 100
+#	level = 5
+#	influence_value = 0
+#}
+
+YEM = {
+	value = 100
+	level = 5
+	influence_value = 0
+}
+
+army = {
+	name = "1a Armata" #done
+	location = 723
+	regiment = {
+		name= "1.1a Bersaglieri"
+		type = infantry
+		home = 720
+	}
+
+	regiment = {
+		name= "2.1a Bersaglieri"
+		type = infantry
+		home = 720
+	}
+
+	regiment = {
+		name= "3.1a Bersaglieri"
+		type = infantry
+		home = 725
+	}
+
+	regiment = {
+		name= "1.2a Bersaglieri"
+		type = infantry
+		home = 723
+	}
+
+	regiment = {
+		name= "2.2a Bersaglieri"
+		type = artillery
+		home = 724
+	}
+
+	regiment = {
+		name= "3.2a Bersaglieri"
+		type = artillery
+		home = 724
+	}
+
+	regiment = {
+		name= "1.1a Granatieri"
+		type = artillery
+		home = 722
+	}
+
+	regiment = {
+		name= "2.1a Granatieri"
+		type = artillery
+		home = 727
+	}
+
+	regiment = {
+		name= "3.1a Granatieri"
+		type = artillery
+		home = 728
+	}
+
+	regiment = {
+		name= "4.1a Granatieri"
+		type = hussar
+		home = 738
+	}
+}
+
+army = {
+	name = "1a Armata" #done
+	location = 749
+	regiment = {
+		name= "1.1a Bersaglieri"
+		type = infantry
+		home = 744
+	}
+
+	regiment = {
+		name= "2.1a Bersaglieri"
+		type = infantry
+		home = 745
+	}
+
+	regiment = {
+		name= "3.1a Bersaglieri"
+		type = infantry
+		home = 748
+	}
+
+	regiment = {
+		name= "1.2a Bersaglieri"
+		type = infantry
+		home = 747
+	}
+
+	regiment = {
+		name= "2.2a Bersaglieri"
+		type = artillery
+		home = 751
+	}
+
+	regiment = {
+		name= "3.2a Bersaglieri"
+		type = artillery
+		home = 750
+	}
+
+	regiment = {
+		name= "1.1a Granatieri"
+		type = artillery
+		home = 749
+	}
+
+	regiment = {
+		name= "2.1a Granatieri"
+		type = artillery
+		home = 749
+	}
+
+	regiment = {
+		name= "3.1a Granatieri"
+		type = artillery
+		home = 753
+	}
+
+	regiment = {
+		name= "4.1a Granatieri"
+		type = hussar
+		home = 754
+	}
+}
+
+army = {
+	name = "1a Armata" #done
+	location = 3426
+	regiment = {
+		name= "1.1a Bersaglieri"
+		type = infantry
+		home = 3426
+	}
+
+	regiment = {
+		name= "2.1a Bersaglieri"
+		type = infantry
+		home = 3427
+	}
+
+	regiment = {
+		name= "3.1a Bersaglieri"
+		type = infantry
+		home = 3228
+	}
+
+	regiment = {
+		name= "1.2a Bersaglieri"
+		type = infantry
+		home = 3229
+	}
+
+	regiment = {
+		name= "2.2a Bersaglieri"
+		type = artillery
+		home = 3230
+	}
+
+	regiment = {
+		name= "3.2a Bersaglieri"
+		type = artillery
+		home = 3231
+	}
+
+	regiment = {
+		name= "1.1a Granatieri"
+		type = artillery
+		home = 3232
+	}
+
+	regiment = {
+		name= "2.1a Granatieri"
+		type = artillery
+		home = 3233
+	}
+
+	regiment = {
+		name= "3.1a Granatieri"
+		type = artillery
+		home = 3234
+	}
+
+	regiment = {
+		name= "4.1a Granatieri"
+		type = hussar
+		home = 3235
+	}
+}
+
+army = {
+	name = "1a Armata" #done
+	location = 3414
+	regiment = {
+		name= "1.1a Bersaglieri"
+		type = infantry
+		home = 762
+	}
+
+	regiment = {
+		name= "2.1a Bersaglieri"
+		type = infantry
+		home = 764
+	}
+
+	regiment = {
+		name= "3.1a Bersaglieri"
+		type = infantry
+		home = 759
+	}
+
+	regiment = {
+		name= "1.2a Bersaglieri"
+		type = infantry
+		home = 760
+	}
+
+	regiment = {
+		name= "2.2a Bersaglieri"
+		type = artillery
+		home = 766
+	}
+
+	regiment = {
+		name= "3.2a Bersaglieri"
+		type = artillery
+		home = 765
+	}
+
+	regiment = {
+		name= "1.1a Granatieri"
+		type = artillery
+		home = 755
+	}
+
+	regiment = {
+		name= "2.1a Granatieri"
+		type = artillery
+		home = 757
+	}
+
+	regiment = {
+		name= "3.1a Granatieri"
+		type = artillery
+		home = 3405
+	}
+
+	regiment = {
+		name= "4.1a Granatieri"
+		type = hussar
+		home = 3404
+	}
+}
+
+navy = {
+	name = "Transport Fleet"
+	location = 473
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+}
+
+navy = {
+	name = "Transport Fleet"
+	location = 473
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+	ship = {
+		name = "Transport"
+		type = steam_transport
+	}
+}
+
+navy = {
+	name = "Patrol Fleet"
+	location = 473
+	ship = {
+		name = "Patrol"
+		type = frigate
+	}
+	ship = {
+		name = "Patrol"
+		type = frigate
+	}
+	ship = {
+		name = "Patrol"
+		type = frigate
+	}
+	ship = {
+		name = "Patrol"
+		type = frigate
+	}
+	ship = {
+		name = "Patrol"
+		type = frigate
+	}
+	ship = {
+		name = "Patrol"
+		type = frigate
+	}
+	ship = {
+		name = "Patrol"
+		type = frigate
+	}
+	ship = {
+		name = "Patrol"
+		type = frigate
+	}
+	ship = {
+		name = "Patrol"
+		type = frigate
+	}
+	ship = {
+		name = "Patrol"
+		type = frigate
+	}
+}
+
+navy = {
+	name = "Frigate Group"
+	location = 473
+	ship = {
+		name = "Frigate"
+		type = manowar
+	}
+	ship = {
+		name = "Frigate"
+		type = manowar
+	}
+	ship = {
+		name = "Frigate"
+		type = manowar
+	}
+	ship = {
+		name = "Frigate"
+		type = manowar
+	}
+	ship = {
+		name = "Frigate"
+		type = manowar
+	}
+	ship = {
+		name = "Frigate"
+		type = manowar
+	}
+	ship = {
+		name = "Frigate"
+		type = manowar
+	}
+	ship = {
+		name = "Frigate"
+		type = manowar
+	}
+	ship = {
+		name = "Frigate"
+		type = manowar
+	}
+	ship = {
+		name = "Frigate"
+		type = manowar
+	}
+	ship = {
+		name = "Destroyer"
+		type = ironclad
+	}
+}

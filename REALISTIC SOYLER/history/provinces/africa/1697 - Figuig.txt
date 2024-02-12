@@ -1,0 +1,8 @@
+
+#colonial = 2
+owner = IBE
+controller = IBE
+add_core = MOR
+#trade_goods = oil
+trade_goods = wool
+life_rating = 35

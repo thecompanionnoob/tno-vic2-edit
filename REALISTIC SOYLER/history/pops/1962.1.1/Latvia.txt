@@ -1,0 +1,508 @@
+#Latvia Region (3236000) 
+#under the rule of baltenkommisariat in 1962  
+#Riga (1000000/55000 POPS)  
+354 = {
+	bureaucrats = {
+		culture = north_german
+		religion = protestant
+		size = 5000
+	}
+
+	clerks = {
+		culture = north_german
+		religion = protestant
+		size = 60000
+	}
+
+	craftsmen = {
+		culture = north_german
+		religion = protestant
+		size = 30000
+	}
+
+	officers = {
+		culture = north_german
+		religion = protestant
+		size = 3000
+	}
+
+	farmers = {
+		culture = north_german
+		religion = protestant
+		size = 527750
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 6500
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 7500
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 6725
+	}
+
+	bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 2500
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 3250
+	}
+
+	officers = {
+		culture = south_german
+		religion = catholic
+		size = 1500
+	}
+
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size = 12000
+	}
+
+	farmers = {
+		culture = south_german
+		religion = catholic
+		size = 267750
+	}
+}
+#Valmeira (516000/129000 POPS)  
+355 = {
+	craftsmen = {
+		culture = north_german
+		religion = protestant
+		size = 5000
+	}
+
+	craftsmen = {
+		culture = latvian
+		religion = protestant
+		size = 15000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	clergymen = {
+		culture = latvian
+		religion = protestant
+		size = 1250
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	artisans = {
+		culture = latvian
+		religion = protestant
+		size = 10000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	artisans = {
+		culture = latvian
+		religion = protestant
+		size = 10000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	artisans = {
+		culture = latvian
+		religion = protestant
+		size = 10000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	artisans = {
+		culture = latvian
+		religion = protestant
+		size = 5000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	soldiers = {
+		culture = latvian
+		religion = protestant
+		size = 9000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	farmers = {
+		culture = latvian
+		religion = protestant
+		size = 245000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 5000
+	}
+
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size = 4000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 5000
+	}
+
+	farmers = {
+		culture = north_german
+		religion = protestant
+		size = 122750
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 5000
+	}
+
+	clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 3000
+	}
+
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 10000
+	}
+
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 4000
+	}
+
+	soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 7500
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = catholic
+		size = 2500
+	}
+
+	farmers = {
+		culture = south_german
+		religion = catholic
+		size = 68750
+	}
+}
+#Daugavpils (136000/34000 POPS)  
+356 = {
+	clergymen = {
+		culture = latvian
+		religion = protestant
+		size = 1750
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	artisans = {
+		culture = latvian
+		religion = protestant
+		size = 10000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	artisans = {
+		culture = latvian
+		religion = protestant
+		size = 10000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	artisans = {
+		culture = latvian
+		religion = protestant
+		size = 10000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	artisans = {
+		culture = latvian
+		religion = protestant
+		size = 10000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	artisans = {
+		culture = latvian
+		religion = protestant
+		size = 6500
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	soldiers = {
+		culture = latvian
+		religion = protestant
+		size = 5000
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	farmers = {
+		culture = latvian
+		religion = protestant
+		size = 52675
+		militancy = 8 
+		rebel_type = liberal_rebels
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 7000
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 2500
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 2200
+	}
+
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size = 2500
+	}
+
+	farmers = {
+		culture = north_german
+		religion = protestant
+		size = 32000
+	}
+
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 10000
+	}
+
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 4400
+	}
+
+	soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 1250
+	}
+
+	farmers = {
+		culture = south_german
+		religion = catholic
+		size = 16000
+	}
+}
+#Jelgava (128000/32000 POPS)  
+357 = {
+	craftsmen = {
+		culture = north_german
+		religion = protestant
+		size = 50000
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 2400
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 5000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size = 7000
+	}
+
+	farmers = {
+		culture = north_german
+		religion = protestant
+		size = 192275
+	}
+}
+#Ventspils (140000/35000 POPS) #uralic = Livonian 
+358 = {
+	craftsmen = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 5000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 6000
+	}
+
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size = 7000
+	}
+
+	farmers = {
+		culture = north_german
+		religion = protestant
+		size = 90450
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 2400
+	}
+}
+#Liepaja (96000/24000 POPS)  
+359 = {
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 7500
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 3000
+	}
+
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size = 2000
+	}
+
+	farmers = {
+		culture = north_german
+		religion = protestant
+		size = 64475
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 5500
+	}
+}

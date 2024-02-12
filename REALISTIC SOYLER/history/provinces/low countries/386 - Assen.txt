@@ -1,0 +1,7 @@
+owner = GLO
+controller = GLO
+add_core = NET
+
+
+trade_goods = wool
+life_rating = 32

@@ -1,0 +1,226 @@
+#Gabon Region (180000)  #see Gulf of Guinea.txt for balance of region 
+#uncolonized in 1836/under the influence of Teke
+#Libreville (48000/12000 POPS) 
+1972 = {
+	bureaucrats = {
+		culture = north_german
+		religion = protestant
+		size = 300
+	}
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size = 3000
+	}
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 50
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 75
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 150
+	}
+
+	soldiers = {
+		culture = bantu
+		religion = animist
+		size = 25
+	}
+
+	slaves = {
+		culture = bantu
+		religion = animist
+		size = 2700
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 150
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 100
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 450
+	}
+
+	soldiers = {
+		culture = bantu
+		religion = animist
+		size = 100
+	}
+
+	slaves = {
+		culture = bantu
+		religion = animist
+		size = 8200
+	}
+}
+#Mayumbe (32000/8000 POPS) 
+1974 = {
+	bureaucrats = {
+		culture = north_german
+		religion = protestant
+		size = 300
+	}
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size = 3000
+	}
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 150
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 75
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 400
+	}
+
+	soldiers = {
+		culture = bantu
+		religion = animist
+		size = 75
+	}
+
+	slaves = {
+		culture = bantu
+		religion = animist
+		size = 7300
+	}
+}
+#Moanda (28000/7000 POPS) 
+1975 = {
+	bureaucrats = {
+		culture = north_german
+		religion = protestant
+		size = 300
+	}
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size = 3000
+	}
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 125
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 75
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 350
+	}
+
+	soldiers = {
+		culture = bantu
+		religion = animist
+		size = 75
+	}
+
+	slaves = {
+		culture = bantu
+		religion = animist
+		size = 6375
+	}
+}
+#uncolonized in 1836
+#Makokou (72000/18000 POPS) 
+1976 = {
+	bureaucrats = {
+		culture = north_german
+		religion = protestant
+		size = 300
+	}
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size = 3000
+	}
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 150
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 75
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 400
+	}
+
+	soldiers = {
+		culture = bantu
+		religion = animist
+		size = 75
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 175
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 100
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 500
+	}
+
+	soldiers = {
+		culture = bantu
+		religion = animist
+		size = 100
+	}
+
+	slaves = {
+		culture = bantu
+		religion = animist
+		size = 16425
+	}
+
+}

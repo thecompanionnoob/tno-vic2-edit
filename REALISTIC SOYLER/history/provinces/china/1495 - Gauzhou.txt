@@ -1,0 +1,11 @@
+owner = JAP
+controller = JAP
+add_core = GXI
+colonial = 2
+
+
+trade_goods = silk
+life_rating = 32
+
+
+

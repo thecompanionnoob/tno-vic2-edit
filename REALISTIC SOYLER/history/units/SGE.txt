@@ -1,0 +1,357 @@
+
+
+#========================= L A N D =========================
+
+army = {
+	name = "Defense Forces"
+	location = 710
+
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 699
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 699
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 701
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 701
+	}
+
+	regiment = {
+		name = "Defense Brigade"
+		type = hussar
+		home = 700
+	}
+
+
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 692
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 712
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 706
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 693
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 693
+	}
+}
+
+army = {
+	name = "Defense Forces"
+	location = 694
+
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 700
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 700
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 700
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 692
+	}
+
+	regiment = {
+		name = "Defense Brigade"
+		type = hussar
+		home = 692
+	}
+
+
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 692
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 692
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 691
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 691
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 691
+	}
+}
+
+army = {
+	name = "Defense Forces"
+	location = 693
+
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 693
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 693
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 693
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 693
+	}
+
+	regiment = {
+		name = "Defense Brigade"
+		type = hussar
+		home = 694
+	}
+
+
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 694
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 694
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 694
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 691
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 691
+	}
+}
+
+army = {
+	name = "Defense Forces"
+	location = 690
+
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 690
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 690
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 690
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 690
+	}
+
+	regiment = {
+		name = "Defense Brigade"
+		type = hussar
+		home = 690
+	}
+
+
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 690
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 690
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 698
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 698
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 698
+	}
+}
+
+army = {
+	name = "Defense Forces"
+	location = 708
+
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 696
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 696
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 696
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 696
+	}
+
+	regiment = {
+		name = "Defense Brigade"
+		type = hussar
+		home = 696
+	}
+
+
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 696
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 697
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 697
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 697
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 697
+	}
+}
+
+army = {
+	name = "Defense Forces"
+	location = 691
+
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 695
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 695
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 695
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = infantry
+		home = 695
+	}
+
+	regiment = {
+		name = "Defense Brigade"
+		type = hussar
+		home = 695
+	}
+
+
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 695
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 698
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 695
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 695
+	}
+	regiment = {
+		name = "Defense Brigade"
+		type = artillery
+		home = 695
+	}
+}

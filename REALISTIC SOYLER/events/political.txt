@@ -1,0 +1,59 @@
+country_event = {
+	id = 500114
+	title = "The power of democracy."
+	desc = "Foreign intervention has toppled our regime!"
+
+	is_triggered_only = yes
+
+	immediate = {
+		government = democracy
+		political_reform = universal_weighted_voting #consider changing to the democracy rebels political reforms
+		political_reform = population_equal_weight
+		political_reform = gerrymandering
+	}
+
+	option = {
+		name = "How terrible!"
+	}
+}
+
+country_event = {
+	id = 500070
+	title = "Facist dictatorship installed!"
+	desc = "Our government type has changed!"
+	is_triggered_only = yes
+
+	immediate = {
+		government = fascist_dictatorship
+		ruling_party_ideology = fascist
+		political_reform = underground_parties
+		political_reform = none_voting
+		political_reform = party_appointed
+	}
+	option = {
+		name = "Interesting."
+	}
+}
+
+
+country_event = {
+	id = 500208
+	title = "ignore this!"
+	desc = "for ai eyes only!"
+	fire_only_once = yes
+
+	trigger = {
+		USA = {government = democracy2}
+		ai = yes
+		year = 1965
+		month = 2
+	}
+
+	immediate = {
+		USA = {government = democracy}
+		
+	}
+	option = {
+		name = "Interesting."
+	}
+}

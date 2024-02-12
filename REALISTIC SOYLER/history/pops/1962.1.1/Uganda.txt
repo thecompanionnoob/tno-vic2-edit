@@ -1,0 +1,398 @@
+#Uganda Region (1136000)  
+#uncolonized in 1836/dominated by Buganda in 1836
+#Entebbe (400000/100000 POPS) 
+2019 = {
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 1350
+
+	}
+
+	bureaucrats = {
+		culture = nilo_saharan
+		religion = animist
+		size = 50
+
+	}
+
+	officers = {
+		culture = nilo_saharan
+		religion = animist
+		size = 100
+
+	}
+
+	clergymen = {
+		culture = nilo_saharan
+		religion = animist
+		size = 725
+
+	}
+
+	artisans = {
+		culture = nilo_saharan
+		religion = animist
+		size = 2800
+
+	}
+
+	farmers = {
+		culture = nilo_saharan
+		religion = animist
+		size = 700
+
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 54225
+
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 575
+
+	}
+
+	clergymen = {
+		culture = nilo_saharan
+		religion = animist
+		size = 300
+
+	}
+
+	artisans = {
+		culture = nilo_saharan
+		religion = animist
+		size = 1500
+
+	}
+
+	farmers = {
+		culture = nilo_saharan
+		religion = animist
+		size = 300
+
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 27325
+
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 10000
+
+	}
+}
+#Mbarara (232000/53000 POPS) 
+2020 = {
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 175
+	}
+
+	clergymen = {
+		culture = bantu
+		religion = animist
+		size = 100
+	}
+
+	artisans = {
+		culture = bantu
+		religion = animist
+		size = 400
+	}
+
+	farmers = {
+		culture = bantu
+		religion = animist
+		size = 100
+	}
+
+	slaves = {
+		culture = bantu
+		religion = animist
+		size = 5225
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 475
+	}
+
+	clergymen = {
+		culture = bantu
+		religion = animist
+		size = 250
+	}
+
+	artisans = {
+		culture = bantu
+		religion = animist
+		size = 1250
+	}
+
+	farmers = {
+		culture = bantu
+		religion = animist
+		size = 250
+	}
+
+	slaves = {
+		culture = bantu
+		religion = animist
+		size = 22775
+	}
+
+	slaves = {
+		culture = bantu
+		religion = animist
+		size = 12000
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 350
+	}
+
+	clergymen = {
+		culture = bantu
+		religion = animist
+		size = 175
+	}
+
+	artisans = {
+		culture = bantu
+		religion = animist
+		size = 725
+	}
+
+	farmers = {
+		culture = bantu
+		religion = animist
+		size = 200
+	}
+
+	slaves = {
+		culture = bantu
+		religion = animist
+		size = 8550
+	}
+}
+#Masindi (192000/48000 POPS) 
+2021 = {
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 550
+	}
+
+	clergymen = {
+		culture = nilo_saharan
+		religion = animist
+		size = 300
+	}
+
+	artisans = {
+		culture = nilo_saharan
+		religion = animist
+		size = 1450
+	}
+
+	farmers = {
+		culture = nilo_saharan
+		religion = animist
+		size = 300
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 26400
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 9000
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 375
+	}
+
+	clergymen = {
+		culture = nilo_saharan
+		religion = animist
+		size = 200
+	}
+
+	artisans = {
+		culture = nilo_saharan
+		religion = animist
+		size = 775
+	}
+
+	farmers = {
+		culture = nilo_saharan
+		religion = animist
+		size = 200
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 8450
+	}
+}
+#Kitgum (104000/26000 POPS) 
+2022 = {
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 375
+	}
+
+	clergymen = {
+		culture = nilo_saharan
+		religion = animist
+		size = 200
+	}
+
+	artisans = {
+		culture = nilo_saharan
+		religion = animist
+		size = 775
+	}
+
+	farmers = {
+		culture = nilo_saharan
+		religion = animist
+		size = 200
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 14450
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 125
+	}
+
+	clergymen = {
+		culture = nilo_saharan
+		religion = animist
+		size = 75
+	}
+
+	artisans = {
+		culture = nilo_saharan
+		religion = animist
+		size = 350
+	}
+
+	farmers = {
+		culture = nilo_saharan
+		religion = animist
+		size = 75
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 63075
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 3000
+	}
+}
+#Jinja (208000/52000 POPS) 
+2023 = {
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 275
+	}
+
+	clergymen = {
+		culture = nilo_saharan
+		religion = animist
+		size = 150
+	}
+
+	artisans = {
+		culture = nilo_saharan
+		religion = animist
+		size = 575
+	}
+
+	farmers = {
+		culture = nilo_saharan
+		religion = animist
+		size = 150
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 6850
+	}
+
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 750
+	}
+
+	clergymen = {
+		culture = nilo_saharan
+		religion = animist
+		size = 375
+	}
+
+	artisans = {
+		culture = nilo_saharan
+		religion = animist
+		size = 1900
+	}
+
+	farmers = {
+		culture = nilo_saharan
+		religion = animist
+		size = 375
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 38400
+	}
+
+	slaves = {
+		culture = nilo_saharan
+		religion = animist
+		size = 6000
+	}
+
+}

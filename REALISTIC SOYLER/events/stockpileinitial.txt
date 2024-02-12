@@ -1,0 +1,42 @@
+country_event = {
+
+	id = 99999999999
+	allow_multiple_instances = no
+	trigger = {
+		date = 1962.1.1
+		ai = no
+		not = { has_country_flag = stonks }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	title = "Monetary Injection"
+	desc = "Inflation is a myth"
+	immediate = {
+		money = 2000000
+		set_country_flag = stonks
+		
+		leadership = 200
+		ammunition = 1000
+		small_arms = 1000
+		artillery = 1000
+		canned_food = 1000
+		wine = 500
+		liquor = 500
+		luxury_clothes = 500
+		machine_parts = 1500
+		cement = 1500
+		clipper_convoy = 750
+		steamer_convoy = 750
+		barrels = 250
+		aeroplanes = 250
+		explosives = 500
+		regular_clothes = 500
+		steel = 3000
+		fuel = 500
+		automobiles = 500
+	}
+	option = {
+		name = "OK"
+	}
+}

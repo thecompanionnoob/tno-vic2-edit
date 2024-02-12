@@ -1,0 +1,1204 @@
+country_event = {
+	id = 500166
+	title = "Fuhrer Goring demands our annexation!"
+	desc = "Our former German masters are demanding we submit to them once again! What should we do?"
+	is_triggered_only = yes
+
+	option = {
+		name = "We have no choice..."
+		FROM = {inherit = THIS}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = "...But to fight for survival!"
+		add_casus_belli = {
+			target = FROM
+			type = ger_annex
+			months = 24
+		}
+
+		release_vassal = THIS
+
+		ai_chance = {
+			factor = 1
+		}
+
+
+		any_country = {
+			limit = {
+				tag = FROM
+				ai = yes
+			}
+			war = {
+				target = THIS
+				attacker_goal = {casus_belli = ger_annex}
+				call_ally = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 500167
+	title = "War Plan Zero accomplished!"
+	desc = "Central Europe has fallen to the might of the Wehrmacht! Poland, the Czech, the Slovak, all will serve as the land of the Grobdeutsches Reich!"
+	fire_only_once = yes
+
+	trigger = {
+		tag = GGE
+		has_country_flag = war_plan_0_start
+		NOT = {exists = POL}
+		NOT = {exists = BOH}
+		NOT = {exists = CZH}
+		NOT = {exists = SLV}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = war_plan_0_finish
+	}
+
+	option = {
+		name = "Heil Goring!"
+		prestige = 20
+	}
+}
+
+country_event = {
+	id = 500176
+	title = "Fueling the War Machine."
+	desc = "event500176desc"
+	is_triggered_only = yes
+
+	option = {
+		name = "The Wehrmacht will be unstopable!"
+		set_country_flag = goring_industrial_rape
+		add_country_modifier = {
+			name = sanctionsrelief
+			duration = 913
+		}
+		SIK = {civilized = no}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = CZH
+					is_core = POL
+				}
+				NOT = {is_core = THIS}
+			}
+			secede_province = SIK
+		}
+		inherit = SIK
+		release = SIK
+		SIK = {civilized = yes}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "Goring will preoccupy the militarists with other ideas."
+		badboy = -5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 500168
+	title = "A sad day for Britain."
+	desc = "The German Wehrmacht has beaten the momentarily free Britain back into submission. British across the world mourn as the Reichsflag flies over the Buckingham Palace."
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		
+		random_owned = {
+			limit = {
+				299 = {owner = {tag = THIS}}
+			}
+			299 = {secede_province = COR}
+		}
+		
+		random_owned = {
+			limit = {
+				298 = {owner = {tag = THIS}}
+			}
+			298 = {secede_province = COR}
+		}
+
+		random_owned = {
+			limit = {
+				296 = {owner = {tag = THIS}}
+			}
+			296 = {secede_province = COR}
+		}
+
+		random_owned = {
+			limit = {
+				297 = {owner = {tag = THIS}}
+			}
+			297 = {secede_province = COR}
+		}
+
+		random_owned = {
+			limit = {
+				303 = {owner = {tag = THIS}}
+			}
+			303 = {secede_province = COR}
+		}
+
+		random_owned = {
+			limit = {
+				294 = {owner = {tag = THIS}}
+			}
+			294 = {secede_province = COR}
+		}
+
+		random_owned = {
+			limit = {
+				302 = {owner = {tag = THIS}}
+			}
+			302 = {secede_province = COR}
+		}
+
+		random_owned = {
+			limit = {
+				300 = {owner = {tag = THIS}}
+			}
+			300 = {secede_province = COR}
+		}
+
+		random_owned = {
+			limit = {
+				301 = {owner = {tag = THIS}}
+			}
+			301 = {secede_province = COR}
+		}
+
+		random_owned = {
+			limit = {
+				295 = {owner = {tag = THIS}}
+			}
+			295 = {secede_province = COR}
+		}
+
+		random_owned = {
+			limit = {
+				293 = {owner = {tag = THIS}}
+			}
+			293 = {secede_province = COR}
+		}
+
+		random_owned = {
+			limit = {
+				291 = {owner = {tag = THIS}}
+			}
+			291= {secede_province = COR}
+		}
+
+		random_owned = {
+			limit = {
+				292 = {owner = {tag = THIS}}
+			}
+			292 = {secede_province = COR}
+		}
+
+		
+			#add_core = COR
+			#secede_province = COR
+		
+		#release = COR
+		COR = {
+			create_vassal = ENG
+			prestige = 20
+		}
+		FROM = {
+			diplomatic_influence = {
+				who = ENG
+				value = 800
+			}
+		}
+		FROM = {
+			diplomatic_influence = {
+				who = COR
+				value = 800
+			}
+		}
+		ENG = {prestige = -70}
+	}
+	option = {
+		name = "A sad day for Britoids!"
+	}
+}
+
+country_event = {
+	id = 500172
+	title = "War Plan A accomplished!"
+	desc = "event500172desc"
+	fire_only_once = yes
+
+	trigger = {
+		tag = GGE
+		has_country_flag = war_plan_a_start
+		NOR = {
+			all_core = {
+				OR = {
+					owner = {tag = GSC}
+					owner = {tag = THIS}
+					owner = {vassal_of = THIS}
+				}
+			}
+		}
+		FIN = {
+			all_core = {
+				OR = {
+					owner = {tag = GSC}
+					owner = {tag = THIS}
+					owner = {vassal_of = THIS}
+				}
+			}
+		}
+		SWE = {
+			all_core = {
+				OR = {
+					owner = {tag = GSC}
+					owner = {tag = THIS}
+					owner = {vassal_of = THIS}
+				}
+			}
+		}
+
+		HUN = {
+			all_core = {
+				OR = {
+					owner = {tag = GBA}
+					owner = {tag = THIS}
+					owner = {vassal_of = THIS}
+				}
+			}
+		}
+
+		ROM = {
+			all_core = {
+				OR = {
+					owner = {tag = GBA}
+					owner = {tag = THIS}
+					owner = {vassal_of = THIS}
+				}
+			}
+		}
+
+		BUL = {
+			all_core = {
+				OR = {
+					owner = {tag = GBA}
+					owner = {tag = THIS}
+					owner = {vassal_of = THIS}
+					is_core = TUR
+				}
+			}
+		}
+
+		ENG = {
+			OR = {
+				government = fascist_dictatorship
+				exists = no
+			}
+		}
+
+		#COR = {
+		#	exists = yes
+		#}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = war_plan_a_finish
+	}
+
+	option = {
+		name = "Heil Goring!"
+		prestige = 20
+	}
+}
+
+country_event = {
+	id = 500178
+	title = "Goring War Plan A."
+	desc = "Goring and the militarists are invading you now. Without this event the AI would never declare the war due to hardcoded AI behavior when over infamy."
+
+	trigger = {
+		always = no #need to fix this event somehow
+		any_owned_province = {
+			OR = {
+				is_core = FIN
+				is_core = SWE
+				is_core = NOR
+				is_core = ROM
+				is_core = HUN
+				is_core = BUL
+			}
+		}
+		NOT = {tag = GGE}
+		NOT = {tag = GSC}
+		NOT = {tag = GBA}
+		NOT = {vassal_of = GGE}
+		NOT = {truce_with = GGE}
+		GGE = {
+			AND = {
+				ai = yes
+				exists = yes
+				NOT = {war = yes}
+				has_country_flag = war_plan_a_scba_done
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	immediate = {
+		GGE = {
+			war = {
+				target = THIS
+				attacker_goal = {casus_belli = goring_wild_ride_a}
+				call_ally = yes
+			}
+		}
+	}
+
+	option = {
+		name = "Sorry, there's no better way to do this."
+	}
+}
+
+country_event = {
+	id = 500179
+	title = "Goring War Plan B."
+	desc = "Goring and the militarists are invading you now. Without this event the AI would never declare the war due to hardcoded AI behavior when over infamy."
+
+	trigger = {
+		always = no #need to fix this event somehow
+		any_owned_province = {
+			OR = {
+				is_core = FRA
+				is_core = NET
+				is_core = BEL
+				is_core = SWI
+				is_core = LUX
+				is_core = BRI
+			}
+		}
+		NOT = {tag = GGE}
+		NOT = {tag = GFR}
+		NOT = {tag = GLO}
+		NOT = {vassal_of = GGE}
+		NOT = {truce_with = GGE}
+		GGE = {
+			AND = {
+				ai = yes
+				exists = yes
+				NOT = {war = yes}
+				has_country_flag = war_plan_b_frlo_done
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	immediate = {
+		GGE = {
+			war = {
+				target = THIS
+				attacker_goal = {casus_belli = goring_wild_ride_b}
+				call_ally = yes
+			}
+		}
+	}
+
+	option = {
+		name = "Sorry, there's no better way to do this."
+	}
+}
+
+country_event = {
+	id = 500180
+	title = "Militarists Angered."
+	desc = "event500180desc"
+	fire_only_once = yes
+	trigger = {
+		tag = GGE 
+		NOT = {has_country_flag = war_plan_0_finish}
+		year = 1966
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	option = {
+		name = "There is just no distracting the militarists from their jingoist plans."
+		any_pop = {
+			scaled_militancy = {
+				factor = 6
+				issue = pro_military
+			}
+			scaled_militancy = {
+				factor = 6
+				issue = jingoism
+			}
+		}
+	}
+
+	option = {
+		name = "Goring will propose a reallocation of the military budget in order to revive the Wunderwaffen Project."
+		any_pop = {
+			scaled_militancy = {
+				factor = 3
+				issue = pro_military
+			}
+			scaled_militancy = {
+				factor = 3
+				issue = jingoism
+			}
+		}
+		treasury = -100000
+		set_country_flag = sun_gun
+	}
+}
+
+country_event = {
+	id = 500181
+	title = "Militarists Angered."
+	desc = "event500181desc"
+	fire_only_once = yes
+	trigger = {
+		tag = GGE 
+		NOT = {has_country_flag = war_plan_a_finish}
+		year = 1976
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	option = {
+		name = "There is just no distracting the militarists from their jingoist plans."
+		any_pop = {
+			scaled_militancy = {
+				factor = 6
+				issue = pro_military
+			}
+			scaled_militancy = {
+				factor = 6
+				issue = jingoism
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 500182
+	title = "Projekt Sonnenkanone."
+	desc = "event500182desc"
+	fire_only_once = yes
+	trigger = {
+		tag = GGE 
+		#NOT = {has_country_flag = sun_gun}
+		has_country_flag = sun_gun
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "Schiebe... This will not go down well for the budget."
+		treasury = -1000000
+	}
+}
+
+country_event = {
+	id = 500183
+	title = "Reactionary Murmering."
+	desc = "event500183desc"
+	fire_only_once = yes
+	trigger = {
+		tag = GGE
+		year = 1982
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	option = {
+		name = "The Abwehr will keep a close eye on them."
+		any_pop = {
+			scaled_militancy = {
+				factor = 6
+				issue = pro_military
+			}
+			scaled_militancy = {
+				factor = 6
+				issue = pacifism
+			}
+		}
+	}
+}
+
+country_event = {
+	major = yes
+	id = 500184
+	title = "Anti-militarist Coup D'etat!"
+	desc = "event500184desc"
+	fire_only_once = yes
+	trigger = {
+		tag = GGE
+		year = 1982
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.01
+			year = 1886
+		}
+	}
+
+	immediate = {
+		change_tag = GE2
+		all_core = {
+			remove_core = GGE
+			remove_core = SGE
+			remove_core = HGE
+			remove_core = BGE
+		}
+		random_owned = {
+			limit = {
+				is_capital = yes
+				owner = {
+					badboy = 1.6
+				}
+			}
+			owner = {
+				badboy = -100
+				badboy = 40
+			}
+		}
+	}
+	option = {
+		name = "The Fuhrer is gone, long live Germany!"
+	}
+}
+
+
+#######################################reichskomms
+country_event = {
+	id = 500170
+	title = "Operation Skandinavien."
+	desc = "Norway has been incorporated into the Reichskommissariat!"
+	fire_only_once = yes
+	trigger = {
+		tag = GSC
+		NOR = {
+			all_core = {
+				owner = {
+					OR = {
+						tag = THIS
+						tag = GGE
+						tag = GE2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = gsc_nor
+		NOR = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+
+		any_country = {
+			limit = {
+				tag = GGE
+				has_country_flag = goring_industrial_rape
+			}
+			remove_country_modifier = sanctionsrelief
+			add_country_modifier = {
+				name = sanctionsrelief
+				duration = 913
+			}
+			SIK = {civilized = no}
+			THIS = {
+				any_owned = {
+					limit = {is_core = NOR}
+					secede_province = SIK
+				}
+				inherit = SIK
+				release = SIK
+				SIK = {civilized = yes}
+			}
+		}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}
+
+country_event = {
+	id = 500177
+	title = "Operation Skandinavien."
+	desc = "Sweden has been incorporated into the Reichskommissariat!"
+	fire_only_once = yes
+	trigger = {
+		tag = GSC
+		SWE = {
+			all_core = {
+				owner = {
+					OR = {
+						tag = THIS
+						tag = GGE
+						tag = GE2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = gsc_swe
+		SWE = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+
+		any_country = {
+			limit = {
+				tag = GGE
+				has_country_flag = goring_industrial_rape
+			}
+			remove_country_modifier = sanctionsrelief
+			add_country_modifier = {
+				name = sanctionsrelief
+				duration = 913
+			}
+			SIK = {civilized = no}
+			THIS = {
+				any_owned = {
+					limit = {is_core = SWE}
+					secede_province = SIK
+				}
+				inherit = SIK
+				release = SIK
+				SIK = {civilized = yes}
+			}
+		}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}
+
+country_event = {
+	id = 500171
+	title = "Operation Skandinavien."
+	desc = "Finland has been incorporated into the Reichskommissariat!"
+	fire_only_once = yes
+	trigger = {
+		tag = GSC
+		FIN = {
+			all_core = {
+				owner = {
+					OR = {
+						tag = THIS
+						tag = GGE
+						tag = GE2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = gsc_fin
+		FIN = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+
+		any_country = {
+			limit = {
+				tag = GGE
+				has_country_flag = goring_industrial_rape
+			}
+			remove_country_modifier = sanctionsrelief
+			add_country_modifier = {
+				name = sanctionsrelief
+				duration = 913
+			}
+			SIK = {civilized = no}
+			THIS = {
+				any_owned = {
+					limit = {is_core = FIN}
+					secede_province = SIK
+				}
+				inherit = SIK
+				release = SIK
+				SIK = {civilized = yes}
+			}
+		}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}
+
+country_event = {
+	id = 500224
+	title = "Operation Balkanhalbinsel."
+	desc = "Hungary has been incorporated into the Reichskommissariat!"
+	fire_only_once = yes
+	trigger = {
+		tag = GBA
+		HUN = {
+			all_core = {
+				owner = {
+					OR = {
+						tag = THIS
+						tag = GGE
+						tag = GE2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = gba_hun
+		HUN = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+
+		any_country = {
+			limit = {
+				tag = GGE
+				has_country_flag = goring_industrial_rape
+			}
+			remove_country_modifier = sanctionsrelief
+			add_country_modifier = {
+				name = sanctionsrelief
+				duration = 913
+			}
+			SIK = {civilized = no}
+			THIS = {
+				any_owned = {
+					limit = {is_core = HUN}
+					secede_province = SIK
+				}
+				inherit = SIK
+				release = SIK
+				SIK = {civilized = yes}
+			}
+		}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}
+
+country_event = {
+	id = 500225
+	title = "Operation Balkanhalbinsel."
+	desc = "Romania has been incorporated into the Reichskommissariat!"
+	fire_only_once = yes
+	trigger = {
+		tag = GBA
+		ROM = {
+			all_core = {
+				owner = {
+					OR = {
+						tag = THIS
+						tag = GGE
+						tag = GE2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = gba_rom
+		ROM = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+
+		any_country = {
+			limit = {
+				tag = GGE
+				has_country_flag = goring_industrial_rape
+			}
+			remove_country_modifier = sanctionsrelief
+			add_country_modifier = {
+				name = sanctionsrelief
+				duration = 913
+			}
+			SIK = {civilized = no}
+			THIS = {
+				any_owned = {
+					limit = {is_core = ROM}
+					secede_province = SIK
+				}
+				inherit = SIK
+				release = SIK
+				SIK = {civilized = yes}
+			}
+		}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}
+
+country_event = {
+	id = 500226
+	title = "Operation Balkanhalbinsel."
+	desc = "Bulgaria has been incorporated into the Reichskommissariat!"
+	fire_only_once = yes
+	trigger = {
+		tag = GBA
+		BUL = {
+			all_core = {
+				OR = {
+					owner = {
+						OR = {
+							tag = THIS
+							tag = GGE
+							tag = GE2
+						}
+					}
+					is_core = TUR
+				}
+				
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = gba_bul
+		BUL = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+
+		any_country = {
+			limit = {
+				tag = GGE
+				has_country_flag = goring_industrial_rape
+			}
+			remove_country_modifier = sanctionsrelief
+			add_country_modifier = {
+				name = sanctionsrelief
+				duration = 913
+			}
+			SIK = {civilized = no}
+			THIS = {
+				any_owned = {
+					limit = {is_core = BUL}
+					secede_province = SIK
+				}
+				inherit = SIK
+				release = SIK
+				SIK = {civilized = yes}
+			}
+		}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}
+
+country_event = {
+	id = 500227
+	title = "Operation Schwarz."
+	desc = "The Netherlands has been incorporated into the Reichskommissariat!"
+	fire_only_once = yes
+	trigger = {
+		NOT = {exists = GER}
+		tag = GLO
+		NET = {
+			all_core = {
+				owner = {
+					OR = {
+						tag = THIS
+						tag = GGE
+						tag = HGE
+						tag = SGE
+						tag = BGE
+						tag = GE2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = glo_net
+		NET = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}
+
+country_event = {
+	id = 500228
+	title = "Operation Schwarz."
+	desc = "Belgium has been incorporated into the Reichskommissariat!"
+	fire_only_once = yes
+	trigger = {
+		NOT = {exists = GER}
+		tag = GLO
+		BEL = {
+			all_core = {
+				owner = {
+					OR = {
+						tag = THIS
+						tag = GGE
+						tag = HGE
+						tag = SGE
+						tag = BGE
+						tag = GE2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = glo_bel
+		BEL = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}
+
+
+country_event = {
+	id = 500229
+	title = "Operation Schwarz."
+	desc = "France has been incorporated into the Reichskommissariat!"
+	fire_only_once = yes
+	trigger = {
+		tag = GFR
+		FRA = {
+			all_core = {
+				owner = {
+					OR = {
+						tag = THIS
+						tag = GGE
+						tag = GE2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = gfr_fra
+		FRA = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}
+
+country_event = {
+	id = 500230
+	title = "Operation Schwarz."
+	desc = "Brittany has been incorporated into the Reichskommissariat!"
+	fire_only_once = yes
+	trigger = {
+		tag = GFR
+		BRI = {
+			all_core = {
+				owner = {
+					OR = {
+						tag = THIS
+						tag = GGE
+						tag = GE2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = gfr_bri
+		BRI = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}
+
+country_event = {
+	id = 500231
+	title = "Operation Schwarz."
+	desc = "Switzerland has been incorporated into the Reichskommissariat!"
+	fire_only_once = yes
+	trigger = {
+		tag = GFR
+		SWI = {
+			all_core = {
+				owner = {
+					OR = {
+						tag = THIS
+						tag = GGE
+						tag = GE2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = gfr_swi
+		SWI = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}
+
+country_event = {
+	id = 500232
+	title = "Puppet Reichskom."
+	desc = "This event puppets a newly created Reichskom."
+	trigger = {
+		NOT = {has_country_flag = rkom_puppeted}
+		OR = {
+			tag = GSC
+			tag = GBA
+			tag = GFR
+		}
+		exists = yes
+		exists = GGE
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = rkom_puppeted
+		GGE = {create_vassal = THIS}
+	}
+
+	option = {
+		name = "Heil Goring!"
+	}
+}

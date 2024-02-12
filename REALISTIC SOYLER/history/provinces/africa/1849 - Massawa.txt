@@ -1,0 +1,8 @@
+owner = IET
+controller = IET
+add_core = ETH
+
+
+trade_goods = coal
+life_rating = 35
+#colonial = 2

@@ -1,0 +1,272 @@
+province_event = {
+	id = 500063
+	title = "Boer Unrest in $PROVINCENAME$"
+	desc = "The insurgency in $PROVINCENAME$ has become uncontrolable!"
+	allow_multiple_instances = yes
+	trigger = {
+		NOT = {ORA = {exists = yes}}
+		owner = {
+			tag = SAF
+		}
+		is_core = ORA
+		controlled_by = REB
+		NOT = {has_province_modifier = ger_afr}
+		NOT = {has_global_flag = saf_war_started}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		add_province_modifier = {
+			name = ger_afr
+			duration = -1
+		}
+		remove_province_modifier = civil_unrest
+	}
+
+	option = {
+		name = "We must secure the situation!"
+	}
+}
+
+country_event = {
+	major = yes
+	id = 500064
+	title = "The South African War!"
+	desc = "Tensions between the British and the Boer have reached a boiling point! Now they have declared independence in regions where the unrest has gotten too high. To make matters worse, they even have German support!"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAF
+		NOT = {has_global_flag = saf_war_started}
+		OR = {
+			any_owned_province = {
+				has_province_modifier = ger_afr
+			}
+			exists = ORA
+		}
+		
+		OR = {
+			year = 1970
+			exists = ORA
+			NOT = {
+				any_owned_province = {
+					is_core = ORA
+					NOT = {controlled_by = REB}
+				}
+			}
+		}
+		#need to adjust to fire immediately if ora rebel forms 
+	}
+
+	mean_time_to_happen = {
+		months = 8
+		modifier = {
+			factor = 0
+			OR = {
+				exists = ORA
+				NOT = {
+					any_owned_province = {
+						is_core = ORA
+						NOT = {controlled_by = REB}
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		#set_global_flag = saf_war_started
+		any_owned = {
+			limit = {
+				has_province_modifier = ger_afr
+			}
+			secede_province = ORA
+			sub_unit = {type = infantry value = current}
+			sub_unit = {type = infantry value = current}
+			sub_unit = {type = hussar value = current}
+			sub_unit = {type = artillery value = current}
+			sub_unit = {type = artillery value = current}
+			sub_unit = {type = artillery value = current}
+		}
+
+
+		ORA = {
+			any_owned = {
+				limit = {
+					#state_id = TRN_2108
+
+					OR = {
+						province_id =2108
+						province_id =2110
+						province_id =2109
+						province_id =2114
+						province_id =2105
+						province_id =2107
+						province_id =2106
+					}
+				}
+				2108 = {secede_province = ORA}
+				2110 = {secede_province = ORA}
+				2109 = {secede_province = ORA}
+				2114 = {secede_province = ORA}
+				2105 = {secede_province = ORA}
+				2107 = {secede_province = ORA}
+				2106 = {secede_province = ORA}
+			}
+		}
+
+		ORA = {
+			any_owned = {
+				limit = {
+					#state_id = ORA_2103
+
+					OR = {
+						province_id = 2103
+						province_id = 2101
+						province_id = 2102
+					}
+				}
+				2103 = {secede_province = ORA}
+				2101 = {secede_province = ORA}
+				2102 = {secede_province = ORA}
+			}
+		}
+
+		ORA = {
+			any_pop = {
+				limit = {
+					type = soldiers
+				}
+				reduce_pop = 2.5
+			}
+			add_country_modifier = {
+				name = sge_mobbuff
+				duration = 365
+			}
+		}
+
+		ORA = {
+			country_event = {
+				id = 500186
+				days = 7
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = ora_ai_fix
+					duration = 7
+				}
+			}
+		}
+		
+		JAN = {
+			add_country_modifier = {
+				name = saf_timer_1
+				duration = 180
+			}
+			add_country_modifier = {
+				name = saf_timer_2
+				duration = 365
+			}
+			add_country_modifier = {
+				name = saf_timer_3
+				duration = 545
+			}
+			add_country_modifier = {
+				name = saf_timer_4
+				duration = 730
+			}
+		}
+	}
+
+	option = {
+		name = "We must preserve democracy in Africa!"
+		
+	}
+}
+
+country_event = {
+	id = 500186
+	title = "The South African War Declared!"
+	desc = "ignore please"
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = saf_war_started
+		any_country = {
+			limit = {
+				tag = WGA
+				has_country_flag = support_ora
+			}
+			ORA = {
+				create_vassal = WGA
+				create_alliance = WGA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = EGA
+				has_country_flag = support_ora
+			}
+			ORA = {
+				create_vassal = EGA
+				create_alliance = EGA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SGA
+				has_country_flag = support_ora
+			}
+			ORA = {
+				create_vassal = SGA
+				create_alliance = SGA
+			}
+
+		}
+		SAF = {
+			war = {
+				target = ORA
+				attacker_goal = { casus_belli = unification_annex_casus_belli }
+				#defender_goal = { casus_belli = civil_war }
+				call_ally = yes
+			}	
+		}
+
+		
+		
+
+		ORA = {
+			release_vassal = EGA
+			release_vassal = WGA
+			release_vassal = SGA
+		}
+	}
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 500065
+	title = "The German threat!"
+	desc = "EVENT500065"
+
+	trigger = {
+		tag = SAF
+		NOT = {has_global_flag = saf_war_explained}
+		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		set_global_flag = saf_war_explained
+		name = "I see."
+	}
+}

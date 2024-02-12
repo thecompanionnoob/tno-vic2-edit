@@ -1,0 +1,69 @@
+country_event = {
+	id = 500058
+	title = "England Requests Cornwall."
+	desc = "Now that the German Civil War is over we have more pressing concerns. England is requesting the Cornwall garrison. It is likely they may try to take it by force. Should we appease them?"
+	is_triggered_only = yes
+	option = {
+		name = "Of course!"
+		COR = {
+			any_pop ={
+				limit = {
+					OR = {
+						has_pop_culture = north_german
+						has_pop_culture = south_german
+					}
+				}
+				reduce_pop = 0.2
+			}
+		}
+		ENG = {set_country_flag = dont_pow}
+		ENG = {inherit = COR}
+		ai_chance = {
+			factor = 0.70
+			modifier = {
+				factor = 0
+				tag = GGE
+			}
+		}
+	}
+	option = {
+		name = "A stupid decision! Appeasement didn't work on us, why would it work on them?"
+		ai_chance = {
+			factor = 0.3
+		}
+	}
+}
+
+country_event = {
+	id = 500072
+	title = "God save the queen!"
+	desc = "Britain has rid itself of the fascist menace! Should we reunite with our homeland?"
+	is_triggered_only = yes
+
+	option = {
+		name = "Of course!"
+		all_core = {add_core = ENG}
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 0.80
+			modifier = {
+				factor = 0.05
+				has_global_flag = cbr_enhanced
+			}
+		}
+	}
+	option = {
+		name = "We have our own destiny!"
+		add_casus_belli = {
+			target = FROM
+			type = make_puppet_unlimited
+			months = 72
+		}
+		ai_chance = {
+			factor = 0.2
+		}
+	}
+
+}

@@ -1,0 +1,7 @@
+owner = CH4
+controller = CH4
+add_core = CH4
+
+
+trade_goods = timber
+life_rating = 32

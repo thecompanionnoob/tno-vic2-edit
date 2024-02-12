@@ -1,0 +1,52 @@
+civilized = yes
+capital = 1178
+primary_culture = mashriqi
+religion = sunni
+government = democracy
+plurality = 10.0
+nationalvalue = nv_equality
+literacy = 0.3
+
+ruling_party = YEM_socialist
+upper_house = {
+	fascist = 0
+	liberal = 15
+	conservative = 10
+	reactionary = 5
+	anarcho_liberal = 0
+	socialist = 60
+	communist = 10
+}
+
+
+# Starting Consciousness
+consciousness = 0
+nonstate_consciousness = 0
+
+oob = "YEM_oob.txt"
+
+slavery = no_slavery
+upper_house_composition = state_equal_weight
+vote_franschise = universal_voting
+public_meetings = yes_meeting
+press_rights = free_press
+trade_unions = no_trade_unions
+voting_system = jefferson_method
+political_parties = non_secret_ballots
+
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions 
+school_reforms = no_schools
+
+2059.1.1 = {
+	oob = "/1861/YEM_oob.txt"
+}
+
+2059.1.1 = {
+	#Military Reforms
+	foreign_weapons = yes_foreign_weapons
+}

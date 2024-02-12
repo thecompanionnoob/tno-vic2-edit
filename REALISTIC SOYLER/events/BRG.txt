@@ -1,0 +1,241 @@
+province_event = {
+	id = 500004
+	title = "Burgundian occupation"
+	desc = "The occupying armies of Himmler have pillaged and raped our lands! Our homes burnt and non-German people executed!"
+	allow_multiple_instances = yes
+	trigger = {
+		NOT = {owned_by = BRG}
+		NOT = {has_province_modifier = BRG_occupy}
+		controlled_by = BRG
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		owner = {war_exhaustion = 1}
+		add_province_modifier = {name = BRG_occupy duration = -1}
+	}
+
+
+	option = {
+		name = "Oh no!"
+	}
+}
+
+country_event = {
+	id = 500005
+	title = "Peacetime recovery."
+	desc = "Resetting Burgundian occupation flags."
+
+	trigger = {
+		war = no
+		any_owned_province = {
+			has_province_modifier = BRG_occupy
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		any_owned = {
+			limit = {
+				has_province_modifier = BRG_occupy
+			}
+			remove_province_modifier = BRG_occupy
+		}
+	}
+	option = {
+		name = "Nice"
+	}
+}
+
+country_event = {
+	id = 500075
+	title = "Develop Occupation Into Settlement."
+	desc = "EVENTDESC500075"
+	trigger = {
+		has_country_flag = brg_coring
+		tag = BRG
+		any_owned_province = {
+			NOT = {is_core = THIS}
+			OR = {
+				is_core = FRA
+				is_core = BEL
+				is_core = NET
+			}
+			NOT = {is_core = ITA}
+			OR = {
+				#culture = north_german
+				#culture = south_german
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		any_owned = {
+				limit = {
+					NOT = {is_core = THIS}
+					OR = {
+						is_core = FRA
+						is_core = BEL
+						is_core = NET
+					}
+					NOT = {is_core = ITA}
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				state_scope = {
+					any_owned = {
+						add_core = THIS
+					}
+				}
+			}
+	}
+
+	option = {
+		name = "Another victory for the fatherland!"
+	}
+}
+
+country_event = {
+	id = 500169
+	title = "brg wins"
+	desc = "oh no"
+
+	is_triggered_only = yes
+	immediate = {
+		random_owned = {
+			limit = {
+				exists = BRI
+				418 = {owner = {tag = THIS}}
+			}
+			418 = {secede_province = BRI}
+		}
+
+		random_owned = {
+			limit = {
+				exists = BRI
+				417 = {owner = {tag = THIS}}
+			}
+			417 = {secede_province = BRI}
+		}
+
+		random_owned = {
+			limit = {
+				NOT = {exists = BRI}
+				418 = {owner = {tag = THIS}}
+			}
+			418 = {secede_province = BRG}
+		}
+
+		random_owned = {
+			limit = {
+				NOT = {exists = BRI}
+				417 = {owner = {tag = THIS}}
+			}
+			417 = {secede_province = BRG}
+		}
+
+		random_owned = {
+			limit = {
+				exists = BRI
+				435 = {owner = {tag = THIS}}
+			}
+			435 = {secede_province = BRI}
+		}
+
+		random_owned = {
+			limit = {
+				exists = BRI
+				434 = {owner = {tag = THIS}}
+			}
+			434 = {secede_province = BRI}
+		}
+
+		random_owned = {
+			limit = {
+				exists = BRI
+				437 = {owner = {tag = THIS}}
+			}
+			437 = {secede_province = BRI}
+		}
+
+		random_owned = {
+			limit = {
+				436 = {owner = {tag = THIS}}
+			}
+			436 = {secede_province = BRG}
+		}
+
+		random_owned = {
+			limit = {
+				441 = {owner = {tag = THIS}}
+			}
+			441 = {secede_province = BRG}
+		}
+
+		random_owned = {
+			limit = {
+				426 = {owner = {tag = THIS}}
+			}
+			426 = {secede_province = BRG}
+		}
+
+		random_owned = {
+			limit = {
+				438 = {owner = {tag = THIS}}
+			}
+			438 = {secede_province = BRG}
+		}
+
+		random_owned = {
+			limit = {
+				440 = {owner = {tag = THIS}}
+			}
+			440 = {secede_province = BRG}
+		}
+
+		random_owned = {
+			limit = {
+				439 = {owner = {tag = THIS}}
+			}
+			439 = {secede_province = BRG}
+		}
+
+		random_owned = {
+			limit = {
+				430 = {owner = {tag = THIS}}
+			}
+			430 = {secede_province = BRG}
+		}
+
+		random_owned = {
+			limit = {
+				446 = {owner = {tag = THIS}}
+			}
+			446 = {secede_province = BRG}
+		}
+		BRG = {
+			diplomatic_influence = {
+				who = BRI
+				value = 800
+			}
+		}
+	}
+
+	option = {
+		name = "ok"
+	}
+}

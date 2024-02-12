@@ -1,0 +1,11 @@
+
+
+
+
+trade_goods = timber
+life_rating = 32
+
+owner = AHG
+controller = AHG
+add_core = AHG
+add_core = HND

@@ -1,0 +1,7 @@
+
+
+trade_goods = grain
+life_rating = 35
+owner = AF3
+controller = AF3
+add_core = AF3

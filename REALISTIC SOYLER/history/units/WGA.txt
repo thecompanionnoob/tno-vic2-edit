@@ -1,0 +1,242 @@
+SAF = {
+	value = -50
+	truce_until = "1964.1.1"
+}
+NGA = {
+	value = -100
+	truce_until = "1967.1.1"
+}
+
+SGA = {
+	value = 125
+	military_access = yes
+}
+
+EGA = {
+	value = 125
+	military_access = yes
+}
+
+army = {
+	name = "1a Armata" #done
+	location = 1988
+	regiment = {
+		name= "1.1a Bersaglieri"
+		type = infantry
+		home = 1980
+	}
+
+	regiment = {
+		name= "2.1a Bersaglieri"
+		type = infantry
+		home = 1980
+	}
+
+	regiment = {
+		name= "3.1a Bersaglieri"
+		type = infantry
+		home = 1978
+	}
+
+	regiment = {
+		name= "1.2a Bersaglieri"
+		type = infantry
+		home = 1978
+	}
+
+	regiment = {
+		name= "2.2a Bersaglieri"
+		type = artillery
+		home = 2624
+	}
+
+	regiment = {
+		name= "3.2a Bersaglieri"
+		type = artillery
+		home = 2624
+	}
+
+	regiment = {
+		name= "1.1a Granatieri"
+		type = artillery
+		home = 1974
+	}
+
+	regiment = {
+		name= "2.1a Granatieri"
+		type = artillery
+		home = 1974
+	}
+
+	regiment = {
+		name= "3.1a Granatieri"
+		type = artillery
+		home = 1975
+	}
+
+	regiment = {
+		name= "4.1a Granatieri"
+		type = hussar
+		home = 1975
+	}
+}
+
+army = {
+	name = "1a Armata" #done
+	location = 1987
+	regiment = {
+		name= "1.1a Bersaglieri"
+		type = infantry
+		home = 1988
+	}
+
+	regiment = {
+		name= "2.1a Bersaglieri"
+		type = infantry
+		home = 1987
+	}
+
+	regiment = {
+		name= "3.1a Bersaglieri"
+		type = infantry
+		home = 1989
+	}
+
+	regiment = {
+		name= "1.2a Bersaglieri"
+		type = infantry
+		home = 1990
+	}
+
+	regiment = {
+		name= "2.2a Bersaglieri"
+		type = artillery
+		home = 1986
+	}
+
+	regiment = {
+		name= "3.2a Bersaglieri"
+		type = artillery
+		home = 1984
+	}
+
+	regiment = {
+		name= "1.1a Granatieri"
+		type = artillery
+		home = 1996
+	}
+
+	regiment = {
+		name= "2.1a Granatieri"
+		type = artillery
+		home = 1997
+	}
+
+	regiment = {
+		name= "3.1a Granatieri"
+		type = artillery
+		home = 1992
+	}
+
+	regiment = {
+		name= "4.1a Granatieri"
+		type = hussar
+		home = 1994
+	}
+}
+
+army = {
+	name = "1a Armata" #done
+	location = 1980
+	regiment = {
+		name= "1.1a Bersaglieri"
+		type = infantry
+		home = 1981
+	}
+
+	regiment = {
+		name= "3.1a Bersaglieri"
+		type = infantry
+		home = 1981
+	}
+
+	regiment = {
+		name= "1.2a Bersaglieri"
+		type = infantry
+		home = 1976
+	}
+
+	regiment = {
+		name= "2.2a Bersaglieri"
+		type = artillery
+		home = 1976
+	}
+
+	regiment = {
+		name= "1.1a Granatieri"
+		type = artillery
+		home = 1973
+	}
+
+	regiment = {
+		name= "2.1a Granatieri"
+		type = artillery
+		home = 1973
+	}
+
+	regiment = {
+		name= "3.1a Granatieri"
+		type = artillery
+		home = 1972
+	}
+
+	regiment = {
+		name= "4.1a Granatieri"
+		type = hussar
+		home = 1972
+	}
+}
+navy = {
+	name = "Submarine Group"
+	location = 1972
+	ship = {
+		name = "Submarine"
+		type = commerce_raider
+	}
+	ship = {
+		name = "Submarine"
+		type = commerce_raider
+	}
+	ship = {
+		name = "Submarine"
+		type = commerce_raider
+	}
+	ship = {
+		name = "Submarine"
+		type = commerce_raider
+	}
+	ship = {
+		name = "Submarine"
+		type = commerce_raider
+	}
+	ship = {
+		name = "Submarine"
+		type = commerce_raider
+	}
+	ship = {
+		name = "Submarine"
+		type = commerce_raider
+	}
+	ship = {
+		name = "Submarine"
+		type = commerce_raider
+	}
+	ship = {
+		name = "Submarine"
+		type = commerce_raider
+	}
+	ship = {
+		name = "Submarine"
+		type = commerce_raider
+	}
+}
