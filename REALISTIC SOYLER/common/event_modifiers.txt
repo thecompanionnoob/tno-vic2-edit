@@ -1179,3 +1179,7 @@ liberian_research_boost = {
 	research_points_modifier = 0.15
 	icon = 5
 }
+
+russian_civil_war = {
+    max_attrition = -20
+}

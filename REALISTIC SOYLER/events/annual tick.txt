@@ -1,0 +1,46 @@
+country_event = {
+	id = 69024
+	title = "annual tick"
+	desc = "annual tick"
+	
+	is_triggered_only = yes #first trigger happens by decision
+	
+	option = {
+		name = "yeah"
+		
+		country_event = { id = 69024 days = 365 }
+		
+		#do something annually
+
+		any_country = {
+
+			any_owned = {
+				limit = {
+                    OR = {
+					    is_core = RUS
+					    is_core = RAR
+					    is_core = NUC
+					    is_core = WA1
+					    is_core = WA2
+					    is_core = FED
+					    is_core = NKV
+					    is_core = NAV
+
+                    }
+                    NOT = { has_global_flag = rus_unified } #maybe this can be a thing?
+				}
+				add_province_modifier = { name = russian_civil_war duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+                    has_global_flag = rus_unified
+				}
+				remove_province_modifier = russian_civil_war
+			}
+		}
+		
+	}
+}
+		
