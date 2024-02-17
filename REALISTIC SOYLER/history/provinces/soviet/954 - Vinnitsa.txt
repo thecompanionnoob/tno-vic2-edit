@@ -1,6 +1,6 @@
-owner = UKR
-controller = UKR
-add_core = UKR
+owner = ROM
+controller = ROM
+add_core = ROM
 
 trade_goods = cattle
 life_rating = 35
