@@ -110,7 +110,6 @@ political_decisions = {
 				NOT = {is_core = ITA}
 				OR = {
 					culture = burgundian
-					culture = german
 					culture = north_german
 					culture = south_german
 				}
