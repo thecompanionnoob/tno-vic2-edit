@@ -1,10 +1,6 @@
-owner = ROM
-controller = ROM
+owner = HUN
+controller = HUN
 add_core = ROM
 add_core = HUN
-
-
-
-
 trade_goods = wool
 life_rating = 35
