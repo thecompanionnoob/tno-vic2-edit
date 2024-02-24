@@ -31,13 +31,13 @@ political_decisions = {
         potential = {
             tag = NUC
 			has_global_flag = rus_unified
-            has_country_flag = dmitry_yezov_reforms_success
 			NOT = { has_country_flag = soon_of_the_great_trial }
         }
         allow = {
             has_country_flag = dmitry_yezov_reforms_success
         }
         effect = {
+		set_country_flag = soon_of_the_great_trial
             KAZ = {
 				all_core = {
 					add_core = NUC
