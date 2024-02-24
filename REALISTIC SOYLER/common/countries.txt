@@ -29,7 +29,7 @@ FED 	= "countries/RusFed.txt"
 NAV 	= "countries/RusNav.txt"
 WA1 	= "countries/WA1.txt"
 WA2 	= "countries/WA2.txt"
-ARY 	= "countries/ARY.txt"
+ARY 	= "countries/ARY.txt" #aryan brotherhood for now is a easter egg if you find him on the files send me screenshot to skarssdlg
 
 KAZ 	= "countries/Kazahkstan.txt"
 ANG 	= "countries/Angola.txt"

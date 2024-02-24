@@ -455,13 +455,35 @@ political_decisions = {
 		}
 		allow = {
 			nationalism_n_imperialism = 1
-			
-			all_core = {
-				owner = {tag = SOV}
+			KAZ = {
+				in_sphere = THIS
 			}
 		}
 		effect = {
-			add_accepted_culture = turkmen
+			inherit = KAZ
+			inherit = BUK
+			inherit = KHI
+			inherit = KOK
+			KAZ = {
+				all_core = {
+					add_core = SOV
+				}
+			}
+			BUK = {
+				all_core = {
+					add_core = SOV
+				}
+			}
+			KHI = {
+				all_core = {
+					add_core = SOV
+				}
+			}
+			KOK = {
+				all_core = {
+					add_core = SOV
+				}
+			}
 		}
 	}
 
