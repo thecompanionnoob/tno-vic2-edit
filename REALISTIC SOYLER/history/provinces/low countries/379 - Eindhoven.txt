@@ -1,7 +1,0 @@
-owner = GLO
-controller = GLO
-add_core = NET
-
-
-trade_goods = coal
-life_rating = 32

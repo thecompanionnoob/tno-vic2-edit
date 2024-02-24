@@ -1,8 +1,0 @@
-
-
-
-trade_goods = wool
-life_rating = 32
-owner = AHG
-controller = AHG
-add_core = BEN

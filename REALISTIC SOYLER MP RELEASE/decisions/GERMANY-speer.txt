@@ -1,0 +1,570 @@
+political_decisions = {
+
+	nes_sge = {
+		picture = ostend_manifesto
+		potential = {
+			tag = SGE
+			NOT = {exists = GER}
+			NOT = {has_country_flag = nes_1_start}
+		}
+		
+		allow = {
+			ideological_thought = 1
+		}
+
+		effect = {
+			set_country_flag = nes_1_start
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+	nes_sge_pol = {
+		picture = ostend_manifesto
+		potential = {
+			NOT = {has_country_flag = near_east_dealt_with}
+			tag = SGE
+			has_country_flag = nes_1_start
+			NOT = {POL = {government = fascist_dictatorship}}
+			exists = POL
+			NOT = {has_country_flag = nes_1_pol_done}
+		}
+
+		allow = {
+			NOT = {truce_with = POL}
+			NOT = {war_with = POL}
+		}
+
+		effect = {
+			set_country_flag = nes_1_pol_done
+			POL = {country_event = 500160}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+	nes_sge_slv = {
+		picture = ostend_manifesto
+		potential = {
+			NOT = {has_country_flag = near_east_dealt_with}
+			tag = SGE
+			has_country_flag = nes_1_start
+			NOT = {SLV = {government = fascist_dictatorship}}
+			exists = SLV
+			NOT = {has_country_flag = nes_1_slv_done}
+		}
+
+		allow = {
+			NOT = {truce_with = SLV}
+			NOT = {war_with = SLV}
+		}
+
+		effect = {
+			set_country_flag = nes_1_slv_done
+			SLV = {country_event = 500160}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+	nes_sge_boh = {
+		picture = ostend_manifesto
+		potential = {
+			NOT = {has_country_flag = near_east_dealt_with}
+			tag = SGE
+			has_country_flag = nes_1_start
+			NOT = {BOH = {government = fascist_dictatorship}}
+			exists = BOH
+			NOT = {has_country_flag = nes_1_boh_done}
+		}
+
+		allow = {
+			NOT = {truce_with = BOH}
+			NOT = {war_with = BOH}
+		}
+
+		effect = {
+			set_country_flag = nes_1_boh_done
+			BOH = {country_event = 500160}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+	nes_sge_czh = {
+		picture = ostend_manifesto
+		potential = {
+			NOT = {has_country_flag = near_east_dealt_with}
+			tag = SGE
+			has_country_flag = nes_1_start
+			NOT = {CZH = {government = fascist_dictatorship}}
+			exists = CZH
+			NOT = {has_country_flag = nes_1_czh_done}
+		}
+
+		allow = {
+			NOT = {truce_with = CZH}
+			NOT = {war_with = CZH}
+		}
+
+		effect = {
+			set_country_flag = nes_1_czh_done
+			CZH = {country_event = 500160}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+	fes_sge = {
+		picture = rhodesia_charter
+		potential = {
+			tag = SGE
+			NOT = {exists = GER}
+			NOT = {has_country_flag = fes_1_start}
+		}
+		allow = {
+			state_n_government = 1
+			has_country_flag = near_east_dealt_with
+			NOT = {exists = FEU}
+		}
+		effect = {
+			set_country_flag = fes_1_start
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+	fes_sge_msc = {
+		picture = rhodesia_charter
+		potential = {
+			NOT = {has_country_flag = far_east_dealt_with}
+			tag = SGE
+			has_country_flag = fes_1_start
+			NOT = {MSC = {government = fascist_dictatorship}}
+			exists = MSC
+			NOT = {has_country_flag = fes_1_msc_done}
+		}
+
+		allow = {
+			NOT = {truce_with = MSC}
+			NOT = {war_with = MSC}
+			NOT = {exists = FEU}
+		}
+
+		effect = {
+			set_country_flag = fes_1_msc_done
+			MSC = {country_event = 500160}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+	fes_sge_ukr = {
+		picture = rhodesia_charter
+		potential = {
+			NOT = {has_country_flag = far_east_dealt_with}
+			tag = SGE
+			has_country_flag = fes_1_start
+			NOT = {UKR = {government = fascist_dictatorship}}
+			exists = UKR
+			NOT = {has_country_flag = fes_1_ukr_done}
+		}
+
+		allow = {
+			NOT = {truce_with = UKR}
+			NOT = {war_with = UKR}
+			NOT = {exists = FEU}
+		}
+
+		effect = {
+			set_country_flag = fes_1_ukr_done
+			UKR = {country_event = 500160}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+	fes_sge_blt = {
+		picture = rhodesia_charter
+		potential = {
+			NOT = {has_country_flag = far_east_dealt_with}
+			tag = SGE
+			has_country_flag = fes_1_start
+			NOT = {BLT = {government = fascist_dictatorship}}
+			exists = BLT
+			NOT = {has_country_flag = fes_1_blt_done}
+		}
+
+		allow = {
+			NOT = {truce_with = BLT}
+			NOT = {war_with = BLT}
+			NOT = {exists = FEU}
+		}
+
+		effect = {
+			set_country_flag = fes_1_blt_done
+			BLT = {country_event = 500160}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+	sge_wage_reform = {
+		picture = das_zivilgesetzbuch
+		potential = {
+			NOT = {exists = GER}
+			tag = SGE
+			NOT = {wage_reform = acceptable_minimum_wage}
+			OR = {
+				check_variable = {
+					which = speer_reform_points
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = speer_reforms_made
+						value = 1
+					}
+				}
+			}
+		}
+		allow = {
+			is_next_reform = acceptable_minimum_wage
+			check_variable = {
+				which = speer_reform_points
+				value = 1
+			}
+		}
+		effect = {
+			change_variable = {
+				which = speer_reform_points
+				value = -1
+			}
+			
+			change_variable = {
+				which = speer_reforms_made
+				value = 1
+			}
+
+			social_reform = acceptable_minimum_wage
+		}
+	}
+
+	sge_work_hours = {
+		picture = das_zivilgesetzbuch
+		potential = {
+			NOT = {exists = GER}
+			tag = SGE
+			NOT = {work_hours = ten_hours}
+			OR = {
+				check_variable = {
+					which = speer_reform_points
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = speer_reforms_made
+						value = 1
+					}
+				}
+			}
+		}
+		allow = {
+			is_next_reform = ten_hours
+			check_variable = {
+				which = speer_reform_points
+				value = 1
+			}
+		}
+		effect = {
+			change_variable = {
+				which = speer_reform_points
+				value = -1
+			}
+			
+			change_variable = {
+				which = speer_reforms_made
+				value = 1
+			}
+
+			social_reform = ten_hours
+		}
+	}
+
+	sge_safety_regulations = {
+		picture = das_zivilgesetzbuch
+		potential = {
+			NOT = {exists = GER}
+			tag = SGE
+			NOT = {safety_regulations = acceptable_safety}
+			OR = {
+				check_variable = {
+					which = speer_reform_points
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = speer_reforms_made
+						value = 1
+					}
+				}
+			}
+		}
+		allow = {
+			is_next_reform = acceptable_safety
+			check_variable = {
+				which = speer_reform_points
+				value = 1
+			}
+		}
+		effect = {
+			change_variable = {
+				which = speer_reform_points
+				value = -1
+			}
+			
+			change_variable = {
+				which = speer_reforms_made
+				value = 1
+			}
+
+			social_reform = acceptable_safety
+		}
+	}
+
+	sge_unemployment_subsidies = {
+		picture = das_zivilgesetzbuch
+		potential = {
+			NOT = {exists = GER}
+			tag = SGE
+			NOT = {unemployment_subsidies = acceptable_subsidies}
+			OR = {
+				check_variable = {
+					which = speer_reform_points
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = speer_reforms_made
+						value = 1
+					}
+				}
+			}
+		}
+		allow = {
+			is_next_reform = acceptable_subsidies
+			check_variable = {
+				which = speer_reform_points
+				value = 1
+			}
+		}
+		effect = {
+			change_variable = {
+				which = speer_reform_points
+				value = -1
+			}
+			
+			change_variable = {
+				which = speer_reforms_made
+				value = 1
+			}
+
+			social_reform = acceptable_subsidies
+		}
+	}
+
+	sge_pensions = {
+		picture = das_zivilgesetzbuch
+		potential = {
+			NOT = {exists = GER}
+			tag = SGE
+			NOT = {pensions = acceptable_pensions}
+			OR = {
+				check_variable = {
+					which = speer_reform_points
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = speer_reforms_made
+						value = 1
+					}
+				}
+			}
+		}
+		allow = {
+			is_next_reform = acceptable_pensions
+			check_variable = {
+				which = speer_reform_points
+				value = 1
+			}
+		}
+		effect = {
+			change_variable = {
+				which = speer_reform_points
+				value = -1
+			}
+			
+			change_variable = {
+				which = speer_reforms_made
+				value = 1
+			}
+
+			social_reform = acceptable_pensions
+		}
+	}
+
+	sge_health_care = {
+		picture = das_zivilgesetzbuch
+		potential = {
+			NOT = {exists = GER}
+			tag = SGE
+			NOT = {health_care = acceptable_health_care}
+			OR = {
+				check_variable = {
+					which = speer_reform_points
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = speer_reforms_made
+						value = 1
+					}
+				}
+			}
+		}
+		allow = {
+			is_next_reform = acceptable_health_care
+			check_variable = {
+				which = speer_reform_points
+				value = 1
+			}
+		}
+		effect = {
+			change_variable = {
+				which = speer_reform_points
+				value = -1
+			}
+			
+			change_variable = {
+				which = speer_reforms_made
+				value = 1
+			}
+
+			social_reform = acceptable_health_care
+		}
+	}
+
+	sge_school_reforms = {
+		picture = das_zivilgesetzbuch
+		potential = {
+			NOT = {exists = GER}
+			tag = SGE
+			NOT = {school_reforms = good_schools}
+			OR = {
+				check_variable = {
+					which = speer_reform_points
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = speer_reforms_made
+						value = 1
+					}
+				}
+			}
+		}
+		allow = {
+			is_next_reform = good_schools
+			check_variable = {
+				which = speer_reform_points
+				value = 1
+			}
+		}
+		effect = {
+			change_variable = {
+				which = speer_reform_points
+				value = -1
+			}
+			
+			change_variable = {
+				which = speer_reforms_made
+				value = 1
+			}
+
+			social_reform = good_schools
+		}
+	}
+
+	sge_ge2_accepted ={
+		picture = das_zivilgesetzbuch
+		potential = {
+			tag = GE2
+			has_country_flag = speer_reformed_germany
+			NOT = {accepted_culture = polish}
+		}
+
+		allow = {
+			empiricism = 1
+		}
+
+		effect = {
+			add_accepted_culture = polish
+			add_accepted_culture = czech
+		}
+	}
+}

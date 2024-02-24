@@ -1,0 +1,6 @@
+name = ".The New Order: REALISTIC SOYLER MP RELEASE"
+path = "mod/REALISTIC SOYLER MP RELEASE"
+user_dir = "REALISTIC SOYLER MP RELEASE"
+replace_path = "events"
+replace_path = "decisions"
+replace_path = "history"

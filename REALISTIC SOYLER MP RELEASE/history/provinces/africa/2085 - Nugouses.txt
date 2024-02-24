@@ -1,0 +1,7 @@
+trade_goods = grain
+life_rating = 15
+owner = SGA
+controller = SGA
+add_core = SGA
+
+colonial = 2

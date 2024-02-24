@@ -1,7 +1,0 @@
-owner = IET
-controller = IET
-add_core = ETH
-
-trade_goods = cattle
-life_rating = 15
-colonial = 2

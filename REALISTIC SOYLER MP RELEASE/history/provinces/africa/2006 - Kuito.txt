@@ -1,0 +1,6 @@
+trade_goods = coal
+life_rating = 15
+owner = SGA
+controller = SGA
+add_core = ANG
+colonial = 2

@@ -1,9 +1,0 @@
-
-owner = IRQ
-controller = IRQ
-add_core = IRQ
-
-
-
-trade_goods = oil
-life_rating = 35

@@ -1,9 +1,0 @@
-owner = ITA
-controller = ITA
-add_core = TUR
-
-
-
-
-trade_goods = coal
-life_rating = 35

@@ -1,0 +1,482 @@
+#Yunnan Region (5652000)
+#under the rule of China in 1836
+#Kunming (3016000/754000 POPS)
+1601 = {
+	aristocrats = {
+		culture = nanfaren
+		religion = mahayana
+		size = 25852.5
+	}
+
+	bureaucrats = {
+		culture = nanfaren
+		religion = mahayana
+		size = 1290.71
+	}
+
+	officers = {
+		culture = nanfaren
+		religion = mahayana
+		size = 2631.21
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = mahayana
+		size = 12926.25
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = mahayana
+		size = 19150
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = mahayana
+		size = 19150
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = mahayana
+		size = 19150
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = mahayana
+		size = 7277
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = mahayana
+		size = 26072.210000000001
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = mahayana
+		size = 673557.96
+	}
+
+	aristocrats = {
+		culture = nanfaren
+		religion = sunni
+		size = 383
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = sunni
+		size = 191.5
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = sunni
+		size = 957.5
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = sunni
+		size = 191.5
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = sunni
+		size = 17426.5
+	}
+
+	aristocrats = {
+		culture = asian_minor
+		religion = animist
+		size = 191.5
+	}
+
+	clergymen = {
+		culture = asian_minor
+		religion = animist
+		size = 95.75
+	}
+
+	artisans = {
+		culture = asian_minor
+		religion = animist
+		size = 574.5
+	}
+
+	soldiers = {
+		culture = asian_minor
+		religion = animist
+		size = 141.71
+	}
+
+	farmers = {
+		culture = asian_minor
+		religion = animist
+		size = 10482.710000000001
+	}
+
+	aristocrats = {
+		culture = nanfaren
+		religion = animist
+		size = 383
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = animist
+		size = 191.5
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = animist
+		size = 957.5
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = animist
+		size = 191.5
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = animist
+		size = 17235
+	}
+
+	aristocrats = {
+		culture = nanfaren
+		religion = animist
+		size = 2152.46
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = animist
+		size = 1003.46
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = animist
+		size = 4979
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = animist
+		size = 1003.46
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = animist
+		size = 90625.46
+	}
+
+	bureaucrats = {
+		culture = beifaren
+		religion = mahayana
+		size = 45.96
+	}
+
+	officers = {
+		culture = beifaren
+		religion = mahayana
+		size = 45.96
+	}
+
+	soldiers = {
+		culture = beifaren
+		religion = mahayana
+		size = 478.75
+	}
+}
+#Dali (1216000/304000 POPS)
+1602 = {
+	aristocrats = {
+		culture = nanfaren
+		religion = mahayana
+		size = 237.46
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = mahayana
+		size = 141.71
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = mahayana
+		size = 670.25
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = mahayana
+		size = 141.71
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = mahayana
+		size = 262206.210000000001
+	}
+
+	aristocrats = {
+		culture = asian_minor
+		religion = animist
+		size = 10341
+	}
+
+	clergymen = {
+		culture = asian_minor
+		religion = animist
+		size = 5266.25
+	}
+
+	artisans = {
+		culture = asian_minor
+		religion = animist
+		size = 19150
+	}
+
+	artisans = {
+		culture = asian_minor
+		religion = animist
+		size = 6702.5
+	}
+
+	soldiers = {
+		culture = asian_minor
+		religion = animist
+		size = 10170.5
+	}
+
+	farmers = {
+		culture = asian_minor
+		religion = animist
+		size = 470419.75
+	}
+
+	aristocrats = {
+		culture = nanfaren
+		religion = animist
+		size = 1003.46
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = animist
+		size = 524.71
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = animist
+		size = 2585.25
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = animist
+		size = 524.71
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = animist
+		size = 47059.21
+	}
+}
+#Paer (1420000/355000 POPS)
+1603 = {
+	aristocrats = {
+		culture = nanfaren
+		religion = mahayana
+		size = 4213
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = mahayana
+		size = 2106.5
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = mahayana
+		size = 10532.5
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = mahayana
+		size = 4106.5
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = mahayana
+		size = 461691.5
+	}
+
+	aristocrats = {
+		culture = nanfaren
+		religion = sunni
+		size = 95.75
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = sunni
+		size = 95.75
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = sunni
+		size = 383
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = sunni
+		size = 95.75
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = sunni
+		size = 6989.75
+	}
+
+	aristocrats = {
+		culture = asian_minor
+		religion = animist
+		size = 3255.5
+	}
+
+	clergymen = {
+		culture = asian_minor
+		religion = animist
+		size = 1723.5
+	}
+
+	artisans = {
+		culture = asian_minor
+		religion = animist
+		size = 8426
+	}
+
+	soldiers = {
+		culture = asian_minor
+		religion = animist
+		size = 3423.5
+	}
+
+	farmers = {
+		culture = asian_minor
+		religion = animist
+		size = 153391.5
+	}
+
+	aristocrats = {
+		culture = nanfaren
+		religion = animist
+		size = 95.75
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = animist
+		size = 95.75
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = animist
+		size = 383
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = animist
+		size = 95.75
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = animist
+		size = 6989.75
+	}
+
+	aristocrats = {
+		culture = nanfaren
+		religion = animist
+		size = 1194.96
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = animist
+		size = 620.46
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = animist
+		size = 3064
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = animist
+		size = 620.46
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = animist
+		size = 55868.21
+	}
+
+	aristocrats = {
+		culture = nanfaren
+		religion = mahayana
+		size = 4354.71
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = mahayana
+		size = 2248.21
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = mahayana
+		size = 11202.75
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = mahayana
+		size = 8248.21
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = mahayana
+		size = 203993.46
+	}
+}

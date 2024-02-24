@@ -1,8 +1,0 @@
-owner = IET
-controller = IET
-add_core = ETH
-
-
-trade_goods = rubber
-life_rating = 30
-#colonial = 2

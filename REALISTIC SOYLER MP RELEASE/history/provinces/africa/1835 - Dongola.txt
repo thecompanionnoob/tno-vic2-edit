@@ -1,0 +1,8 @@
+owner = IGY
+controller = IGY
+add_core = SUD
+colonial = 2
+
+
+trade_goods = fruit
+life_rating = 30

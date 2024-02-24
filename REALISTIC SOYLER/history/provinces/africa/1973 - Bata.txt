@@ -1,7 +1,0 @@
-trade_goods = timber
-life_rating = 15
-owner = IBE
-controller = IBE
-add_core = WGA
-
-colonial = 2

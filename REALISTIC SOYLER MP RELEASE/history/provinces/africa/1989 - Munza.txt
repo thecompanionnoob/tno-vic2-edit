@@ -1,0 +1,7 @@
+#trade_goods = rubber
+trade_goods = tea
+life_rating = 15
+owner = WGA
+controller = WGA
+add_core = CNG
+colonial = 2

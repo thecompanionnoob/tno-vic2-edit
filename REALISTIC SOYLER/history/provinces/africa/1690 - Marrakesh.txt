@@ -1,6 +1,0 @@
-owner = IBE
-controller = IBE
-add_core = MOR
-#trade_goods = fruit
-trade_goods = sulphur
-life_rating = 35

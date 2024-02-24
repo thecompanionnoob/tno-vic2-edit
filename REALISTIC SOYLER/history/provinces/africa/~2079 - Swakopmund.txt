@@ -1,6 +1,0 @@
-trade_goods = fish
-life_rating = 10
-owner = SAF
-controller = SAF
-add_core = SAF
-colonial = 2

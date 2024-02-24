@@ -1,8 +1,0 @@
-owner = IGY
-controller = IGY
-add_core = SUD
-colonial = 2
-
-
-trade_goods = wool
-life_rating = 30

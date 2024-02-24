@@ -1,9 +1,0 @@
-
-
-
-trade_goods = cotton
-life_rating = 28
-owner = AHG
-controller = AHG
-add_core = AHG
-add_core = HND

@@ -1,8 +1,0 @@
-owner = NUC
-controller = NUC
-add_core = NUC
-
-
-
-trade_goods = iron
-life_rating = 35

@@ -1,0 +1,70 @@
+alliance=
+	{
+		first="PER"
+		second="IRQ"
+		start_date="1962.1.1"
+	}
+
+alliance=
+	{
+		first="BRG"
+		second="BRI"
+		start_date="1962.1.1"
+	}
+
+alliance=
+	{
+		first="COR"
+		second="ENG"
+		start_date="1962.1.1"
+	}
+
+alliance=
+	{
+		first="NAV"
+		second="FED"
+		start_date="1962.1.1"
+	}
+
+
+alliance=
+	{
+		first="USA"
+		second="PHI"
+		start_date="1962.1.1"
+	}
+
+alliance=
+	{
+		first="NGA"
+		second="CAR"
+		start_date="1962.1.1"
+	}
+
+alliance=
+	{
+		first="PAK"
+		second="BEN"
+		start_date="1962.1.1"
+	}
+
+alliance=
+	{
+		first="EGA"
+		second="WGA"
+		start_date="1962.1.1"
+	}
+
+alliance=
+	{
+		first="EGA"
+		second="SGA"
+		start_date="1962.1.1"
+	}
+
+alliance=
+	{
+		first="WGA"
+		second="SGA"
+		start_date="1962.1.1"
+	}

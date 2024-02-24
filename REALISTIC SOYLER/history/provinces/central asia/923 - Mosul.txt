@@ -1,9 +1,0 @@
-
-owner = TUR
-controller = TUR
-add_core = IRQ
-
-
-
-trade_goods = oil
-life_rating = 35

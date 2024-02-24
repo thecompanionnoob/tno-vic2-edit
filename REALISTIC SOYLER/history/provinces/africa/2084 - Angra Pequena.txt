@@ -1,9 +1,0 @@
-trade_goods = coal
-life_rating = 15
-owner = SGA
-controller = SGA
-add_core = SGA
-
-colonial = 2
-
-naval_base = 1

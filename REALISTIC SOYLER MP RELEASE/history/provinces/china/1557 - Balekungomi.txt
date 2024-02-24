@@ -1,0 +1,8 @@
+owner = CH6
+controller = CH6
+add_core = CH6
+
+
+
+trade_goods = coal
+life_rating = 32

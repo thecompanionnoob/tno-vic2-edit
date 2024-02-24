@@ -1,6 +1,0 @@
-trade_goods = sulphur
-life_rating = 15
-owner = EGA
-controller = EGA
-add_core = ZAM
-colonial = 2

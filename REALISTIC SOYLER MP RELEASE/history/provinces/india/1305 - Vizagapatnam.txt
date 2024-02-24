@@ -1,0 +1,8 @@
+owner = HND
+controller = HND
+add_core = HND
+
+add_core = BAS
+
+trade_goods = coal
+life_rating = 32

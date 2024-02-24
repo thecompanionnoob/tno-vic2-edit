@@ -1,7 +1,0 @@
-owner = JAP
-controller = JAP
-add_core = KOR
-
-naval_base = 1
-trade_goods = fish
-life_rating = 35

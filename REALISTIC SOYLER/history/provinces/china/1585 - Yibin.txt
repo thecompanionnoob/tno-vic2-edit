@@ -1,8 +1,0 @@
-owner = CH5
-controller = CH5
-add_core = CH5
-
-
-
-trade_goods = tea
-life_rating = 32

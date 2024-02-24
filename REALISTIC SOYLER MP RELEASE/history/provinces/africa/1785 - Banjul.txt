@@ -1,0 +1,7 @@
+
+
+trade_goods = fruit
+life_rating = 30
+owner = AF4
+controller = AF4
+add_core = AF4

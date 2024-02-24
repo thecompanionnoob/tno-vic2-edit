@@ -1,0 +1,7 @@
+trade_goods = cattle
+life_rating = 15
+owner = EGA
+controller = EGA
+add_core = ZUL
+civilized = 2
+colonial = 2

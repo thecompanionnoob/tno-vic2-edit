@@ -1,0 +1,227 @@
+political_decisions = {
+	victory_in_the_gcw = {
+		picture = form_north_german_confederation
+		potential = {
+			exists = GER
+			OR = {
+				tag = GGE
+				tag = BGE
+				tag = SGE
+				tag = HGE
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					tag = GGE
+					NOT = {exists = BGE}
+					NOT = {exists = SGE}
+					NOT = {exists = HGE}
+				}
+				AND = {
+					tag = SGE
+					NOT = {exists = BGE}
+					NOT = {exists = GGE}
+					NOT = {exists = HGE}
+				}
+				AND = {
+					tag = HGE
+					NOT = {exists = BGE}
+					NOT = {exists = SGE}
+					NOT = {exists = GGE}
+				}
+				AND = {
+					tag = BGE
+					NOT = {exists = GGE}
+					NOT = {exists = SGE}
+					NOT = {exists = HGE}
+				}
+			}
+		}
+		effect = {
+			#civilized = yes
+			remove_country_modifier = sge_mobbuff
+			prestige = 30
+			any_country = {
+				limit = {
+					vassal_of = GER
+				}
+				country_event = 500001
+			}
+			GER = {all_core={add_core = THIS}}
+			inherit = GER
+			diplomatic_influence = {
+				who = WGA
+				value = 600
+			}
+			diplomatic_influence = {
+				who = EGA
+				value = 600
+			}
+			diplomatic_influence = {
+				who = SGA
+				value = 600
+			}
+			diplomatic_influence = {
+				who = CUB
+				value = 600
+			}
+
+			any_country = {
+				limit = {
+					tag = GGE
+					NOT = {tag = THIS}
+				}
+				all_core = {remove_core = GGE}
+			}
+
+			any_country = {
+				limit = {
+					tag = SGE
+					NOT = {tag = THIS}
+				}
+				all_core = {remove_core = SGE}
+			}
+			any_country = {
+				limit = {
+					tag = HGE
+					NOT = {tag = THIS}
+				}
+				all_core = {remove_core = HGE}
+			}
+			any_country = {
+				limit = {
+					tag = BGE
+					NOT = {tag = THIS}
+				}
+				all_core = {remove_core = BGE}
+			}
+			any_country = {
+				limit = {
+					tag = GER
+					NOT = {tag = THIS}
+				}
+				all_core = {remove_core = GER}
+			}
+
+			end_war = GGE
+			end_war = SGE
+			end_war = BGE
+			end_war = HGE
+		}
+	}
+
+	brg_assistance = {
+		picture = das_zivilgesetzbuch
+		potential = {
+			tag = HGE
+		    exists = GER
+		    NOT = {has_country_flag = brg_assist}
+		}
+		allow = {
+			OR = {
+				year = 1963
+				month = 1
+			}
+		}
+		effect = {
+			set_country_flag = brg_assist
+			BRG = {
+				country_event = 500030
+			}
+		}
+	}
+
+	pup_assistance = {
+		picture = das_zivilgesetzbuch
+		potential = {
+			tag = SGE
+		    exists = GER
+		    NOT = {has_country_flag = pup_assist}
+		}
+		allow = {
+			OR = {
+				year = 1963
+				month = 1
+			}
+		}
+		effect = {
+			set_country_flag = pup_assist
+			any_country = {
+				limit = {
+					OR = {
+						tag = POL
+						tag = BOH
+						tag = SLV
+						tag = UKR
+						tag = BLT
+						tag = MSC
+					}
+					is_vassal = yes
+				}
+				country_event = 500031
+			}
+		}
+	}
+
+
+
+	gcwmobbuff = {
+		potential = {
+			tag = SGE
+			NOT = {has_country_flag = mobbuffed}
+		}
+		allow = {
+
+		}
+		effect = {
+			set_country_flag = mobbuffed
+			#add_country_modifier = {
+			#	name = sge_mobbuff
+			#	duration = 1825
+			#}
+		}
+	}
+
+	bge_wp = {
+		picture = das_zivilgesetzbuch
+		potential = {
+			tag = BGE
+			OR = {
+				HGE = {has_country_flag = brg_assist}
+				SGE = {has_country_flag = pup_assist}
+			}
+			NOT = {has_country_flag = bge_peace}
+			exists = GGE
+		}
+		allow = {
+			OR = {
+				BRG = {
+					has_country_flag = refused_german_peace
+				}
+				POL = {
+					has_country_flag = refused_german_peace
+				}
+				BLT = {
+					has_country_flag = refused_german_peace
+				}
+				MSC = {
+					has_country_flag = refused_german_peace
+				}
+				UKR = {
+					has_country_flag = refused_german_peace
+				}
+				BOH = {
+					has_country_flag = refused_german_peace
+				}
+			}
+		}
+		effect = {
+			set_country_flag = bge_peace
+			GGE = {
+				country_event = 500039
+			}
+		}
+	}
+}
+

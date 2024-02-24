@@ -1,4 +1,0 @@
-add_core = AF3
-
-trade_goods = fruit
-life_rating = 15

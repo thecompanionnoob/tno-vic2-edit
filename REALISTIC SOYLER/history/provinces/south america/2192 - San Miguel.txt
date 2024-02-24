@@ -1,8 +1,0 @@
-
-add_core = UCA
-add_core = ELS
-trade_goods = rubber
-life_rating = 30
-
-	owner = ELS
-	controller = ELS

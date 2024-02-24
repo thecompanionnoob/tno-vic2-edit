@@ -1,0 +1,8 @@
+owner = CH3
+controller = CH3
+add_core = CH3
+
+
+
+trade_goods = fruit
+life_rating = 32

@@ -1,6 +1,0 @@
-name = ".The New Order: REALISTIC SOYLER"
-path = "mod/REALISTIC SOYLER"
-user_dir = "REALISTIC SOYLER"
-replace_path = "events"
-replace_path = "decisions"
-replace_path = "history"

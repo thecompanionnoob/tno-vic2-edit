@@ -1,7 +1,0 @@
-#trade_goods = rubber
-trade_good = iron
-life_rating = 15
-add_core = NGA
-owner = CAR
-controller = CAR
-add_core = CAR

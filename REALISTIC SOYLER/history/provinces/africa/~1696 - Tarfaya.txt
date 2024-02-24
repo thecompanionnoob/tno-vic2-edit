@@ -1,6 +1,0 @@
-
-trade_goods = fish
-life_rating = 30
-owner = IBE
-controller = IBE
-add_core = MOR

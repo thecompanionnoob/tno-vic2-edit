@@ -1,0 +1,11 @@
+
+owner = HND
+controller = HND
+add_core = HND
+
+
+add_core = ORI
+
+
+trade_goods = grain
+life_rating = 32

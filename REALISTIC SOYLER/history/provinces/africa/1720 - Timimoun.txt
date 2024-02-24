@@ -1,7 +1,0 @@
-#trade_goods = wool
-trade_goods = oil
-life_rating = 10
-owner = IAL
-controller = IAL
-add_core = ALD
-colonial = 2

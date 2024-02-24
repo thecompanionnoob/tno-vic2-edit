@@ -1,0 +1,306 @@
+country_event = {
+	id = 500163
+	title = "Fuhrer Bormann demands our vassalization!"
+	desc = "Our former German masters are demanding we submit to them once again! What should we do?"
+	is_triggered_only = yes
+
+	option = {
+		name = "We have no choice..."
+		country_event = 500070
+		FROM = {create_vassal = THIS}
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = 800
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				FROM = {
+					relation = { who = THIS value = 100 }
+				}
+			}
+			modifier = {
+				factor = 0
+				tag = FRA
+			}
+			modifier = {
+				factor = 0
+				tag = ENG
+			}
+		}
+	}
+	option = {
+		name = "...But to fight for survival!"
+		add_casus_belli = {
+			target = FROM
+			type = make_facist
+			months = 24
+		}
+		add_casus_belli = {
+			target = FROM
+			type = make_puppet_unlimited
+			months = 24
+		}
+		ai_chance = {
+			factor = 2
+		}
+
+		any_country = {
+			limit = {
+				tag = FROM
+				ai = yes
+				OR = {
+					NOT = {alliance_with = THIS}
+					THIS = {ai = yes}
+				}
+			}
+			war = {
+				target = THIS
+				attacker_goal = {casus_belli = make_facist}
+				attacker_goal = {casus_belli = make_puppet_unlimited}
+				call_ally = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 500164
+	title = "Bormann tames the Central European Reichskommissariats."
+	desc = "Bormann has instituted direct German control in Bohemia, Slovakia, and Poland, ensuring the security of the Reich for a thousand years to come."
+	fire_only_once = yes
+
+	trigger = {
+		tag = BGE
+		has_country_flag = nes_1_start
+		OR = {
+			NOT = {exists = POL}
+			is_our_vassal = POL
+		}
+		OR = {
+			NOT = {exists = BOH}
+			is_our_vassal = BOH
+		}
+		OR = {
+			NOT = {exists = CZH}
+			is_our_vassal = CZH
+		}
+		OR = {
+			NOT = {exists = SLV}
+			is_our_vassal = SLV
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = near_east_dealt_with
+	}
+
+	option = {
+		name = "Heil Bormann!"
+		prestige = 20
+	}
+}
+
+country_event = {
+	id = 500165
+	title = "Bormann tames the Eastern European Reichskommissariats."
+	desc = "Bormann has instituted direct German control in Moscow, Ukraine, and the Baltics, ensuring the security of the Reich for a thousand years to come."
+	fire_only_once = yes
+
+	trigger = {
+		tag = BGE
+		has_country_flag = fes_1_start
+		NOT = {exists = FEU}
+		OR = {
+			NOT = {exists = MSC}
+			is_our_vassal = MSC
+		}
+		OR = {
+			NOT = {exists = BLT}
+			is_our_vassal = BLT
+		}
+		OR = {
+			NOT = {exists = UKR}
+			is_our_vassal = UKR
+		}
+	}
+
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = far_east_dealt_with
+	}
+
+	option = {
+		name = "Heil Bormann!"
+		prestige = 20
+	}
+}
+
+province_event = {
+	id = 500202
+	title = "Autumn in Germany."
+	desc = "event500202desc"
+
+	trigger = {
+		year = 1977 #was 1982
+		owner = {
+			tag = BGE
+		}
+		
+		OR = {
+			province_id = 549
+			province_id = 556
+			province_id = 555
+			province_id = 553
+			province_id = 557
+			province_id = 551
+			province_id = 550
+			province_id = 552
+		}
+
+		NOT = {
+			BGE = {
+				check_variable = {
+					which = bormann_protests
+					value = 12
+				}
+			}
+		}
+
+		NOT = {has_province_modifier = student_protests}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	immediate = {
+		BGE = {
+			change_variable = {
+				which = bormann_protests
+				value = 1
+			}
+		}
+
+		add_province_modifier = {
+			name = student_protests
+			duration = 365
+		}
+
+		any_pop = {
+			militancy = 3
+			ideology = {
+				factor = 2
+				value = communist
+			}
+		}
+	}
+
+
+	option = {
+		name = "Protests have spread to $PROVINCENAME$..."
+	}
+}
+
+country_event = {
+	id = 500203
+	title = "Reichsminister Hewel Proposes Negotiations."
+	desc = "event500203desc"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BGE
+		BGE = {
+			check_variable = {
+				which = bormann_protests
+				value = 6
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "Empty placations might ease tensions."
+		set_country_flag = bormann_students
+	}
+
+	option = {
+		name = "The Reichsminister's suggestion is suicidal!"
+	}
+}
+
+country_event = {
+	major = yes
+	id = 500204
+	title = "Fuhrer Bormann Has Died."
+	desc = "event500204desc"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BGE
+		year = 1977
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	immediate = {
+		change_tag = GE2
+		all_core = {
+			remove_core = BGE
+		}
+	}
+
+	option = {
+		name = "Long live the Reich!"
+	}
+
+}
+
+country_event = {
+	major = yes
+	id = 500205
+	title = "Rote Armee Fraktion Decapitates the Reichsgovernment!"
+	desc = "event500205desc"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BGE
+		has_country_flag = bormann_students
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		government = proletarian_dictatorship
+		change_tag = GE2
+		all_core = {
+			remove_core = BGE
+		}
+	}
+
+	option = {
+		name = "Kill all Fascists!"
+	}
+
+}

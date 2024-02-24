@@ -1,6 +1,0 @@
-owner = NGA
-controller = NGA
-add_core = NGA
-
-trade_goods = timber
-life_rating = 15
