@@ -1,5 +1,6 @@
-owner = POL
-controller = POL
+owner = BOH
+controller = SGE
+add_core = SGE
 add_core = POL
 trade_goods = coal
 life_rating = 40

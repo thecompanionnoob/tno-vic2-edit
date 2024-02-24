@@ -451,7 +451,8 @@ political_decisions = {
 		picture = peking_convention
 		potential = {
 			tag = SOV
-			NOT = {accepted_culture = turkmen}
+			exists = KAZ
+			
 		}
 		allow = {
 			nationalism_n_imperialism = 1

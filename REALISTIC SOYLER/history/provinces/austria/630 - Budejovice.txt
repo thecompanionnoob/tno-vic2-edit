@@ -1,5 +1,6 @@
-owner = BOH
-controller = BOH
+owner = BGE
+controller = BGE
+add_core = BGE
 add_core = BOH
 add_core = CZH
 

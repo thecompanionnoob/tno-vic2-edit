@@ -1,0 +1,21 @@
+political_decisions = {
+	integrate_netherlands = {
+		potential = {
+		
+			OR = {
+				tag = HGE
+				tag = BRG
+			}
+			exists = GLO
+		}
+		allow = {
+			GLO = {
+			in_sphere = THIS
+			}
+		}
+		effect = {
+		inherit = GLO
+		
+		}
+	}
+}
